@@ -1,10 +1,6 @@
 body {
-  margin: 0;
   margin-top: 100px;
   font-family: 'Arial', sans-serif;
-  display: fixed;
-  justify-content: center;
-  height: 100vh;
 }
 
 .container {
@@ -20,16 +16,54 @@ body {
   border: 2px solid #000000; /* Adicione um estilo de borda se desejar */
 }
 
-.name {
-  font-size: 24px;
-  color: #333;
-  margin: 0;
+/* ------------------------------------------- Social Icons ------------------------------------------- */
+.social-icons {
+  margin-top: 20px;
 }
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 30px; /* Ajuste conforme necessário */
+  height: 30px; /* Ajuste conforme necessário */
+}
+
+/* --------------------------------------------- Fim Social Icons -------------------------------------------- */
+
+
+/* ----------------------------------------------- Quem Sou Eu ----------------------------------------------- */
 
 .about-me {
   font-size: 16px;
   color: #666;
 }
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 100PX;
+}
+
+.image-container {
+  margin-right: 20px;
+}
+img {
+  width: 200px; /* Ajuste conforme necessário */
+  height: auto;
+}
+
+
+.text-content p {
+  color: #666;
+  max-width: 550px;
+  text-align: justify;
+}
+/* ------------------------------------------- Fim Quem Sou Eu ----------------------------------------------- */
+
+/* --------------------------------------- Configuração geral de Texto --------------------------------------- */
 
 h1 {
     text-align: center;
@@ -43,46 +77,41 @@ h2 {
     font-size: 50px;
     margin: 0;
   }
-
-
-.social-icons {
-    margin-top: 20px;
-  }
-  
-  .social-icons a {
-    margin-right: 10px;
-  }
-  
-  .social-icons img {
-    width: 30px; /* Ajuste conforme necessário */
-    height: 30px; /* Ajuste conforme necessário */
-  }
+/* ----------------------------------- Fim Configuração geral de Texto --------------------------------------- */
 
 
 
+/* ---------------------------------------------- Projetos ----------------------------------------------------- */
+.projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ddd; /* Adicione uma borda para visualizar melhor */
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicione uma sombra para destacar */
+  background-color: #fff; /* Adicione uma cor de fundo */
+}
+
+.projeto img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
+
+.projeto .conteudo {
+  text-align: center;
+  margin-top: 10px; /* Espaçamento entre a imagem e o conteúdo */
+}
+
+.projeto p {
+  color: #666;
+  max-width: 550px;
+  text-align: justify;
+}
 
 
 
+/* -------------------------------------------- Fim Projetos------------------------------------------------- */
 
-  .content-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin-bottom: 40PX;
-  }
-  
-  .image-container {
-    margin-right: 20px;
-  }
-  img {
-    width: 200px; /* Ajuste conforme necessário */
-    height: auto;
-  }
 
-  
- .text-content p {
-    color: #666;
-    max-width: 550px;
-    text-align: justify;
-  }
