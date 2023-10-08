@@ -70,6 +70,7 @@ h1 {
 }
 
 h2 {
+  text-align: center;
     /* Adicione um degradê de uma cor para outra da esquerda para a direita */
     background: linear-gradient(to right, #FF0050, #7A358B); 
     -webkit-background-clip: text; /* Isso faz com que o degradê seja aplicado apenas ao texto */
@@ -82,7 +83,7 @@ h2 {
 
 
 /* ---------------------------------------------- Projetos ----------------------------------------------------- */
-.projeto {
+.carousel .projeto {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,21 +94,40 @@ h2 {
   background-color: #fff; /* Adicione uma cor de fundo */
 }
 
-.projeto img {
+.carousel .projeto img {
   width: 500px;
   max-width: 100%;
   height: auto;
 }
 
-.projeto .conteudo {
+.carousel .projeto .conteudo {
   text-align: center;
   margin-top: 10px; /* Espaçamento entre a imagem e o conteúdo */
 }
 
-.projeto p {
+.carousel .projeto p {
   color: #666;
   max-width: 550px;
   text-align: justify;
+}
+
+
+
+
+
+.projeto .mini-imagens {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; /* Ajuste conforme necessário */
+}
+
+/* Estilos para as pequenas imagens */
+.projeto .mini-imagens img {
+  max-width: 300px; /* Ajuste conforme necessário */
+  height: auto;
+  margin-right: 5px; /* Espaçamento entre as imagens */
+  border-radius: 3px;
+  margin-bottom: 50px;
 }
 
 
