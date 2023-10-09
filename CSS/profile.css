@@ -86,55 +86,6 @@ h2 {
 /* ---------------------------------------------- Projetos ----------------------------------------------------- */
 
 /*------- caroussel ------- */
-.content-projetos {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  margin-top: 0px;
-  max-height: 510px;
-}
-
-.content-projeto {
-  width: calc(33.33% - 20px); /* Largura inicial para até 3 projetos em uma linha */
-  margin: 20px; /* Adicionar margem entre os projetos */
-  box-sizing: border-box;
-  text-align: justify;
-  justify-content: center;
-  background-color: #ededed;
-  border-radius: 5px;
-  padding: 10px;
-  max-width: 300px;
-  max-height: 600px;
-}
-
-.content-projeto img {
-  max-width: 200px;
-  max-height: 200px;
-}
-
-/* Estilos base para os projetos */
-.projetos {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Limpar a margem à direita do terceiro projeto para evitar problemas de layout */
-.content-projeto:nth-child(3n) {
-  margin-right: 0;
-}
-
-/* Estilos para telas pequenas */
-@media (max-width: 767px) {
-  .content-projeto {
-    width: 100%; /* Um projeto por linha em telas pequenas */
-    margin-right: 0; /* Resetar a margem direita */
-  }
-}
-
-
-
 
 
 /* -------------------------------------------- Fim Projetos------------------------------------------------- */
