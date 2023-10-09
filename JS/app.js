@@ -16,21 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ----------------------------------------- Carrossel ------------------------------------------------------- */
 
-$(document).ready(function(){
-  $('.carousel').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true, // Mostra as setas de navegação
-      dots: false, // Desativa os pontos de navegação
-      autoplay: true,
-      autoplaySpeed: 2000 // Intervalo de troca de slides em milissegundos
-  });
-
-  // Exibe o conteúdo do carrossel após a inicialização do Slick
-  $('.projeto').css('display', 'block');
-});
-
 
 
 // -------------------------------------- fim Carrossel ------------------------------------------------------- */

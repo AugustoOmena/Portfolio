@@ -13,6 +13,7 @@ body {
   height: 190px;
   border-radius: 50%;
   margin-bottom: 90px;
+  margin-top: 80px;
   border: 2px solid #000000; /* Adicione um estilo de borda se desejar */
 }
 
@@ -83,52 +84,56 @@ h2 {
 
 
 /* ---------------------------------------------- Projetos ----------------------------------------------------- */
-.carousel .projeto {
+
+/*------- caroussel ------- */
+.content-projetos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-  border: 1px solid #ddd; /* Adicione uma borda para visualizar melhor */
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicione uma sombra para destacar */
-  background-color: #fff; /* Adicione uma cor de fundo */
+  justify-content: center;
+  padding: 20px;
+  margin-top: 0px;
+  max-height: 510px;
 }
 
-.carousel .projeto img {
-  width: 500px;
-  max-width: 100%;
-  height: auto;
-}
-
-.carousel .projeto .conteudo {
-  text-align: center;
-  margin-top: 10px; /* Espaçamento entre a imagem e o conteúdo */
-}
-
-.carousel .projeto p {
-  color: #666;
-  max-width: 550px;
+.content-projeto {
+  width: calc(33.33% - 20px); /* Largura inicial para até 3 projetos em uma linha */
+  margin: 20px; /* Adicionar margem entre os projetos */
+  box-sizing: border-box;
   text-align: justify;
+  justify-content: center;
+  background-color: #ededed;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 300px;
+  max-height: 600px;
 }
 
+.content-projeto img {
+  max-width: 200px;
+  max-height: 200px;
+}
 
-
-
-
-.projeto .mini-imagens {
+/* Estilos base para os projetos */
+.projetos {
   display: flex;
-  justify-content: space-between;
-  margin-top: 10px; /* Ajuste conforme necessário */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Estilos para as pequenas imagens */
-.projeto .mini-imagens img {
-  max-width: 300px; /* Ajuste conforme necessário */
-  height: auto;
-  margin-right: 5px; /* Espaçamento entre as imagens */
-  border-radius: 3px;
-  margin-bottom: 50px;
+/* Limpar a margem à direita do terceiro projeto para evitar problemas de layout */
+.content-projeto:nth-child(3n) {
+  margin-right: 0;
 }
+
+/* Estilos para telas pequenas */
+@media (max-width: 767px) {
+  .content-projeto {
+    width: 100%; /* Um projeto por linha em telas pequenas */
+    margin-right: 0; /* Resetar a margem direita */
+  }
+}
+
+
 
 
 
