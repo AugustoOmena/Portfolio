@@ -82,10 +82,6 @@ h2 {
 
 
 /* ---------------------------------------------- Projetos ----------------------------------------------------- */
-.projects{
-  background-color: #fafafa;
-  border-radius: 7px;
-}
 
 .projects__containter {
   display: grid;
@@ -167,10 +163,10 @@ h2 {
   bottom: 0;
 }
 
-.section__subtitle,
 .section__title {
   justify-content: center;
   text-align: center;
+  margin-bottom: 30px;
 }
 /* -------------------------------------------- Fim Projetos------------------------------------------------- */
 
