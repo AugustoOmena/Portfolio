@@ -2,34 +2,27 @@ document.addEventListener('DOMContentLoaded', () => {
     new TypeIt(".animated", {
         speed: 200,
         loop: true
-    }).type('Software Developer', {delay: 2000})
+    }).type('Software Developer', {delay: 3000})
       .move(-18, { delay: 100})
-      .type('Java ', {delay: 900})
+      .type('Java ', {delay: 3000})
       .move(-1)
-      .delete(5)
-      .type('Javascript', {delay: 2000})
+      .delete(1)
+      .type('ascript', {delay: 2700})
       .move(0)
       .delete(11)
+      .type('CSS', {delay: 2700})
+      .delete(4)
+      .type('C#', {delay: 2700})
+      .move(20)
+      .delete(21)
+      .type('Take a Look in my Projects', {delay: 2700})
     .go();
+      
 
 })
 
 // ----------------------------------------- Carrossel ------------------------------------------------------- */
 
-$(document).ready(function(){
-  $('.carousel').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true, // Mostra as setas de navegação
-      dots: false, // Desativa os pontos de navegação
-      autoplay: true,
-      autoplaySpeed: 2000 // Intervalo de troca de slides em milissegundos
-  });
-
-  // Exibe o conteúdo do carrossel após a inicialização do Slick
-  $('.projeto').css('display', 'block');
-});
 
 
 

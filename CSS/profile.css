@@ -70,7 +70,6 @@ h1 {
 }
 
 h2 {
-  text-align: center;
     /* Adicione um degradê de uma cor para outra da esquerda para a direita */
     background: linear-gradient(to right, #FF0050, #7A358B); 
     -webkit-background-clip: text; /* Isso faz com que o degradê seja aplicado apenas ao texto */
@@ -83,55 +82,95 @@ h2 {
 
 
 /* ---------------------------------------------- Projetos ----------------------------------------------------- */
-.carousel .projeto {
+.projects{
+  background-color: #fafafa;
+  border-radius: 7px;
+}
+
+.projects__containter {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+  padding: 0 40px;
+}
+
+.projects__card{
+  width: 100%;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.projects__img{
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --hue: 330; /* Defina o valor de matiz em graus aqui */
+}
+
+
+.projects__modal{
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,
+              hsla(0, 0%, 0%, 0) 0%,
+              hsla(var(--hue), 70%, 40%, .8) 120%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
-  border: 1px solid #ddd; /* Adicione uma borda para visualizar melhor */
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicione uma sombra para destacar */
-  background-color: #fff; /* Adicione uma cor de fundo */
+  justify-content: center;
+  transition: bottom .4s;
 }
 
-.carousel .projeto img {
-  width: 500px;
-  max-width: 100%;
-  height: auto;
+.projects__subtitle,
+.projects__button{
+  color: var(--title-color);
+  font-size: var(--small-font-size);
 }
 
-.carousel .projeto .conteudo {
-  text-align: center;
-  margin-top: 10px; /* Espaçamento entre a imagem e o conteúdo */
+.projects__subtitle{
+  display: block;
+  margin-bottom: .25rem;
 }
 
-.carousel .projeto p {
-  color: #666;
-  max-width: 550px;
-  text-align: justify;
+.projects__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: .75rem;
 }
 
-
-
-
-
-.projeto .mini-imagens {
+.projects__button{
   display: flex;
-  justify-content: space-between;
-  margin-top: 10px; /* Ajuste conforme necessário */
+  align-items: center;
+  column-gap: .5rem;
+  font-weight: var(--font-meddium);
 }
 
-/* Estilos para as pequenas imagens */
-.projeto .mini-imagens img {
-  max-width: 300px; /* Ajuste conforme necessário */
-  height: auto;
-  margin-right: 5px; /* Espaçamento entre as imagens */
-  border-radius: 3px;
-  margin-bottom: 50px;
+.projects__subtitle,
+.projects__title,
+.projects__button {
+  color: white;
 }
 
+.projects__button i{
+  font-size: 1.25rem;
+}
 
+.projects__card:hover .projects__modal{
+  bottom: 0;
+}
 
+.section__subtitle,
+.section__title {
+  justify-content: center;
+  text-align: center;
+}
 /* -------------------------------------------- Fim Projetos------------------------------------------------- */
-
 
