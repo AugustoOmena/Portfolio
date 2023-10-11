@@ -224,3 +224,8 @@ h2 {
   color: #FF0050;
   font-size: small;
 }
+
+.sobrepor{
+  position: relative;
+  z-index: 1;
+}
