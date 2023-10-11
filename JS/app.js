@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .type('C#', {delay: 2700})
       .move(20)
       .delete(21)
-      .type('Take a Look in my Projects', {delay: 2700})
+      .type('Take a look at my projects', {delay: 2700})
     .go();
       
 
@@ -60,3 +60,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 });
+
+
