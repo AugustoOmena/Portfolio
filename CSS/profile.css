@@ -8,11 +8,11 @@ body {
 }
 
 .profile-picture {
-  margin-top: 70px;
+  margin-top: 79px;
   width: 190px;
   height: 190px;
   border-radius: 50%;
-  margin-bottom: 90px;
+  margin-bottom: 60px;
   border: 2px solid #000000; /* Adicione um estilo de borda se desejar */
 }
 
@@ -116,7 +116,7 @@ h2 {
 .projects__card{
   width: 100%;
   position: relative;
-  border-radius: 1rem;
+  border-radius: 3rem;
   overflow: hidden;
 }
 
@@ -283,4 +283,41 @@ h2 {
 .habilidade p {
   text-align: justify; /* Texto justificado */
   color: #666; /* Cor do texto */
+}
+
+/* ------=======------- */
+
+.LiguagemDeProgramacao {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Linguagem {
+  width: calc(20% - 120px);
+  width: 150px;
+  height: 150px;
+  margin: 10px; /* Espaçamento entre as habilidades */
+  padding: 15px;
+  border-radius: 100px; /* Bordas arredondadas para cada habilidade */
+  background-color: #fff; /* Fundo branco para cada habilidade */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar as habilidades */
+}
+
+.Linguagem h1 {
+  margin-top: 55px;
+  font-size: 24px; /* Tamanho do título da habilidade */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.Linguagem p {
+  text-align: justify; /* Texto justificado */
+  color: #666; /* Cor do texto */
+}
+
+.CorDeFundo {
+  background-color: #f8f8f8; /* Fundo branco claro */
+  border-radius: 100px; /* Bordas arredondadas */
+  margin-bottom: 50px;
 }
