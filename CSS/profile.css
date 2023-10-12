@@ -73,6 +73,16 @@ img {
   .image-container {
     margin-right: 0; /* Remove a margem à direita da imagem */
   }
+
+  .projects__containter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projects__card {
+    margin: 10px; /* Ajuste conforme necessário */
+  }
 }
 /* ------------------------------------------- Fim Quem Sou Eu ----------------------------------------------- */
 
