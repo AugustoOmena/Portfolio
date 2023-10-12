@@ -239,12 +239,12 @@ h2 {
 
 
 .BR {
-  color:#FF0050;
+  color:hsl(0, 0%, 100%);
   font-size: small;
 }
 
 .US {
-  color: #FF0050;
+  color: #ffffff;
   font-size: small;
 }
 
@@ -254,5 +254,33 @@ h2 {
 }
 
 
-/* ------=======------- * /
+/* ------=======------- */
 
+.habilidades {
+  background-color: #f8f8f8; /* Fundo branco claro */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.habilidade {
+  width: calc(50% - 20px); /* Duas habilidades por linha com espaçamento de 20px */
+  margin: 10px; /* Espaçamento entre as habilidades */
+  padding: 15px;
+  border-radius: 8px; /* Bordas arredondadas para cada habilidade */
+  background-color: #fff; /* Fundo branco para cada habilidade */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar as habilidades */
+}
+
+.habilidade h1 {
+  font-size: 24px; /* Tamanho do título da habilidade */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.habilidade p {
+  text-align: justify; /* Texto justificado */
+  color: #666; /* Cor do texto */
+}
