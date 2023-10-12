@@ -61,6 +61,19 @@ img {
   max-width: 550px;
   text-align: justify;
 }
+
+/* Consulta de mídia para largura menor que 672px */
+@media screen and (max-width: 672px) {
+  .content-section {
+    flex-direction: column; /* Mudança para empilhar elementos verticalmente */
+    margin: 0; /* Remove a margem inferior */
+    border: none; /* Remove a borda */
+  }
+
+  .image-container {
+    margin-right: 0; /* Remove a margem à direita da imagem */
+  }
+}
 /* ------------------------------------------- Fim Quem Sou Eu ----------------------------------------------- */
 
 /* --------------------------------------- Configuração geral de Texto --------------------------------------- */
