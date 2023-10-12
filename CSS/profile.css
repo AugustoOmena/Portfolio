@@ -63,7 +63,7 @@ img {
 }
 
 /* Consulta de mídia para largura menor que 672px */
-@media screen and (max-width: 672px) {
+@media screen and (max-width: 676px) {
   .content-section {
     flex-direction: column; /* Mudança para empilhar elementos verticalmente */
     margin: 0; /* Remove a margem inferior */
@@ -108,7 +108,7 @@ h2 {
 
 .projects__containter {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
   gap: 2rem;
   padding: 0 200px;
 }
