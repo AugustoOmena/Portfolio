@@ -62,3 +62,30 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// modal
+
+// JavaScript para manipulação do modal
+
+// Obter referências aos elementos do DOM
+var modal = document.getElementById('myModal');
+var openModalBtn = document.getElementById('openModalBtn');
+var closeModalBtn = document.getElementById('closeModalBtn');
+
+// Abrir o modal
+openModalBtn.onclick = function() {
+    modal.style.display = 'block';
+}
+
+// Fechar o modal
+closeModalBtn.onclick = function() {
+    modal.style.display = 'none';
+}
+
+// Fechar o modal clicando fora dele
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+
+
