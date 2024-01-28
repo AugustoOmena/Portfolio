@@ -13,10 +13,10 @@ body {
   height: 190px;
   border-radius: 50%;
   margin-bottom: 60px;
-  border: 2px solid #000000; /* Adicione um estilo de borda se desejar */
+  border: 2px solid #000000;
 }
 
-/* ------------------------------------------- Social Icons ------------------------------------------- */
+/* -- Social Icons -- */
 .social-icons {
   margin-top: 20px;
 }
@@ -26,14 +26,14 @@ body {
 }
 
 .social-icons img {
-  width: 30px; /* Ajuste conforme necessário */
-  height: 30px; /* Ajuste conforme necessário */
+  width: 30px;
+  height: 30px;
 }
 
-/* --------------------------------------------- Fim Social Icons -------------------------------------------- */
+/* -- Fim Social Icons -- */
 
 
-/* ----------------------------------------------- Quem Sou Eu ----------------------------------------------- */
+/* -- Quem Sou Eu -- */
 
 .about-me {
   font-size: 16px;
@@ -51,7 +51,7 @@ body {
   margin-right: 20px;
 }
 img {
-  width: 200px; /* Ajuste conforme necessário */
+  width: 200px; 
   height: auto;
 }
 
@@ -62,16 +62,15 @@ img {
   text-align: justify;
 }
 
-/* Consulta de mídia para largura menor que 672px */
 @media screen and (max-width: 676px) {
   .content-section {
-    flex-direction: column; /* Mudança para empilhar elementos verticalmente */
-    margin: 0; /* Remove a margem inferior */
-    border: none; /* Remove a borda */
+    flex-direction: column;
+    margin: 0;
+    border: none; 
   }
 
   .image-container {
-    margin-right: 0; /* Remove a margem à direita da imagem */
+    margin-right: 0; 
   }
 
   .projects__containter {
@@ -81,31 +80,24 @@ img {
   }
 
   .projects__card {
-    margin: 10px; /* Ajuste conforme necessário */
+    margin: 10px; 
   }
 }
-/* ------------------------------------------- Fim Quem Sou Eu ----------------------------------------------- */
 
-/* --------------------------------------- Configuração geral de Texto --------------------------------------- */
-
+/* -- Configuração geral de Texto -- */
 h1 {
     text-align: center;
 }
 
 h2 {
-    /* Adicione um degradê de uma cor para outra da esquerda para a direita */
     background: linear-gradient(to right, #FF0050, #7A358B); 
-    -webkit-background-clip: text; /* Isso faz com que o degradê seja aplicado apenas ao texto */
-    color: transparent; /* Torna o texto transparente para que o degradê seja visível */
+    -webkit-background-clip: text; 
+    color: transparent;
     font-size: 50px;
     margin: 0;
   }
-/* ----------------------------------- Fim Configuração geral de Texto --------------------------------------- */
 
-
-
-/* ---------------------------------------------- Projetos ----------------------------------------------------- */
-
+/*-- Projetos -- */
 .projects__containter {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
@@ -126,9 +118,8 @@ h2 {
 }
 
 :root {
-  --hue: 330; /* Defina o valor de matiz em graus aqui */
+  --hue: 330; 
 }
-
 
 .projects__modal{
   position: absolute;
@@ -191,10 +182,8 @@ h2 {
   text-align: center;
   margin-bottom: 30px;
 }
-/* -------------------------------------------- Fim Projetos------------------------------------------------- */
 
-/* -------------------------------------------- botão -------------------------------------------------------- */
-
+/* -- botão -- */
 .checkbox {
   display: none;
 }
@@ -215,8 +204,8 @@ h2 {
   transform: scale(1.5);
 
   position: fixed;
-  top: 20px; /* Ajuste a distância superior conforme necessário */
-  right: 70px; /* Ajuste a distância da direita conforme necessário */
+  top: 20px;
+  right: 70px;
 }
 
 .label .ball {
@@ -254,11 +243,11 @@ h2 {
 }
 
 
-/* ------=======------- */
+/* -- habilidades -- */
 
 .habilidades {
-  background-color: #f8f8f8; /* Fundo branco claro */
-  border-radius: 8px; /* Bordas arredondadas */
+  background-color: #f8f8f8;
+  border-radius: 8px;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -267,17 +256,19 @@ h2 {
 }
 
 .habilidade {
-  width: calc(905px - 1px); /* Duas habilidades por linha com espaçamento de 20px */
-  margin: 10px; /* Espaçamento entre as habilidades */
+  width: calc(905px - 10px);
+  margin: 10px;
   padding: 15px;
-  border-radius: 8px; /* Bordas arredondadas para cada habilidade */
-  background-color: #fff; /* Fundo branco para cada habilidade */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar as habilidades */
+  border-radius: 8px; 
+  background-color: #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  align-items: center;
+  display: flex;
 }
 
 .habilidade h1 {
-  font-size: 24px; /* Tamanho do título da habilidade */
-  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  font-size: 24px; 
+  margin-bottom: 10px; 
 }
 
 .habilidade p {
@@ -285,7 +276,28 @@ h2 {
   color: #666; /* Cor do texto */
 }
 
-/* ------=======------- */
+.habilidade img {
+  max-width: 250px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 568px) {
+ 
+  .habilidade h3 {
+    font-size: 17px;
+  }
+
+  .habilidade p {
+    font-size: 9px;
+  }
+
+  .habilidade img {
+    max-width: 150px;
+  }
+
+}
+
+/* -- Habilidades Técnicas -- */
 
 .LiguagemDeProgramacao {
   padding: 20px;
@@ -298,42 +310,31 @@ h2 {
   width: calc(20% - 120px);
   width: 150px;
   height: 150px;
-  margin: 10px; /* Espaçamento entre as habilidades */
+  margin: 10px;
   padding: 15px;
-  border-radius: 100px; /* Bordas arredondadas para cada habilidade */
-  background-color: #fff; /* Fundo branco para cada habilidade */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar as habilidades */
+  border-radius: 100px; 
+  background-color: #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .Linguagem h1 {
   margin-top: 55px;
-  font-size: 24px; /* Tamanho do título da habilidade */
-  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  font-size: 24px; 
+  margin-bottom: 10px; 
 }
 
 .Linguagem p {
-  text-align: justify; /* Texto justificado */
-  color: #666; /* Cor do texto */
+  text-align: justify; 
+  color: #666; 
 }
 
 .CorDeFundo {
-  background-color: #f8f8f8; /* Fundo branco claro */
-  border-radius: 100px; /* Bordas arredondadas */
+  background-color: #f8f8f8; 
+  border-radius: 100px;
   margin-bottom: 50px;
 }
 
-/* teste */
-.habilidade {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.habilidade img {
-  max-width: 250px;
-  margin-right: 15px;
-}
-
+/* -- teste -- */
 .descricao {
   flex-grow: 1;
 }
