@@ -2,9 +2,24 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
+/* Cor Gradiant */
+.rosa {
+  background: linear-gradient(to right, #FF0050, #7A358B); 
+  -webkit-background-clip: text; 
+  color: transparent;
+}
+
+.espacAbaixo {
+  margin-bottom: 50px;
+}
+
 .container {
   text-align: center;
   margin-bottom: 90px;
+}
+
+.center {
+  text-align: center;
 }
 
 .profile-picture {
@@ -30,9 +45,6 @@ body {
   height: 30px;
 }
 
-/* -- Fim Social Icons -- */
-
-
 /* -- Quem Sou Eu -- */
 
 .about-me {
@@ -44,7 +56,6 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  margin-bottom: 100PX;
 }
 
 .image-container {
@@ -90,9 +101,6 @@ h1 {
 }
 
 h2 {
-    background: linear-gradient(to right, #FF0050, #7A358B); 
-    -webkit-background-clip: text; 
-    color: transparent;
     font-size: 50px;
     margin: 0;
   }
@@ -242,63 +250,7 @@ h2 {
   z-index: 1;
 }
 
-
-/* -- habilidades -- */
-
-.habilidades {
-  background-color: #f8f8f8;
-  border-radius: 8px;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.habilidade {
-  width: calc(905px - 10px);
-  margin: 10px;
-  padding: 15px;
-  border-radius: 8px; 
-  background-color: #fff; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  align-items: center;
-  display: flex;
-}
-
-.habilidade h1 {
-  font-size: 24px; 
-  margin-bottom: 10px; 
-}
-
-.habilidade p {
-  text-align: justify; /* Texto justificado */
-  color: #666; /* Cor do texto */
-}
-
-.habilidade img {
-  max-width: 250px;
-  margin-right: 15px;
-}
-
-@media screen and (max-width: 568px) {
- 
-  .habilidade h3 {
-    font-size: 17px;
-  }
-
-  .habilidade p {
-    font-size: 9px;
-  }
-
-  .habilidade img {
-    max-width: 150px;
-  }
-
-}
-
 /* -- Habilidades Técnicas -- */
-
 .Linguagem h1 {
   margin-top: 55px;
   font-size: 24px; 
@@ -358,3 +310,8 @@ h2 {
   text-decoration: none;
   cursor: pointer;
 }
+
+.MarEsqP {
+  margin-left: 17px;
+}
+
