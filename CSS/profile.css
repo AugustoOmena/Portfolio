@@ -334,19 +334,22 @@ h2 {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-  z-index: 1;
+  z-index: 2;
 }
 
 .modal-menu-content {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 55px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 40%;
-  height: 100%;
+  max-width: 990px;
   background: #fff;
   padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 30px 30px;
 }
+
 
 /* Menu Hamburguer */
 ul {
@@ -365,12 +368,21 @@ a {
   text-decoration: none;
   color: #555;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   transition: color 0.3s ease;
 }
 
 a:hover {
   color: #ff7f50; /* Coral color, change it as needed */
+}
+
+@media only screen and (max-width: 938px) {
+  .modal-menu-content {
+    width: 80%; /* Ajuste a largura conforme necessário para telas menores */
+    max-width: none; /* Remove a largura máxima */
+    border-radius: 50px; /* Bordas arredondadas nos quatro cantos */
+    top: 40%;
+  }
 }
 
 /* Responsive styles */
@@ -379,4 +391,45 @@ a:hover {
     display: block;
     margin: 10px 0;
   }
+}
+
+/* modal dos projetos */
+
+.modal-projeto {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+}
+
+.modal-projeto-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  width: 80%;
+  max-width: 850px;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.modal-projeto-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 3;
+}
+
+.modal-projeto-text {
+  padding: 20px;
+  background: linear-gradient(to bottom, transparent, #fff);
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
