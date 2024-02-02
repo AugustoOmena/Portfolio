@@ -119,7 +119,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
   gap: 2rem;
-  padding: 0 170px;
+  padding: 0 180px;
 }
 
 .projects__card{
