@@ -82,23 +82,6 @@ window.onclick = function(event) {
     }
 }
 
-// Modal Menu
-
-document.addEventListener("DOMContentLoaded", function () {
-  const menuIcon = document.querySelector(".menuh");
-  const modalContainer = document.querySelector(".modal-menu-container");
-
-  menuIcon.addEventListener("click", function () {
-    modalContainer.style.display = "block";
-  });
-
-  modalContainer.addEventListener("click", function (event) {
-    if (event.target === modalContainer) {
-      modalContainer.style.display = "none";
-    }
-  });
-});
-
 /* Modais de Projeto */
 function openModal(modalId) {
   document.getElementById(modalId).style.display = "block";

@@ -95,25 +95,6 @@ img {
   }
 }
 
-/* -- Menu hamburguer -- */
-
-.menuh {
-  max-width: 45px;
-  margin-left: 50px;
-  cursor: pointer;
-  position: fixed;
-}
-
-/* -- Configuração geral de Texto -- */
-h1 {
-    text-align: center;
-}
-
-h2 {
-    font-size: 50px;
-    margin: 0;
-  }
-
 /*-- Projetos -- */
 .projects__containter {
   display: grid;
