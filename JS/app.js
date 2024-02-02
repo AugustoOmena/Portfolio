@@ -64,28 +64,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // modal
 
-// JavaScript para manipulação do modal
-
-// Obter referências aos elementos do DOM
 var modal = document.getElementById('myModal');
 var openModalBtn = document.getElementById('openModalBtn');
 var closeModalBtn = document.getElementById('closeModalBtn');
 
-// Abrir o modal
 openModalBtn.onclick = function() {
     modal.style.display = 'block';
 }
 
-// Fechar o modal
 closeModalBtn.onclick = function() {
     modal.style.display = 'none';
 }
 
-// Fechar o modal clicando fora dele
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = 'none';
     }
 }
+
+// Modal Menu
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.querySelector(".menuh");
+  const modalContainer = document.querySelector(".modal-menu-container");
+
+  menuIcon.addEventListener("click", function () {
+    modalContainer.style.display = "block";
+  });
+
+  modalContainer.addEventListener("click", function (event) {
+    if (event.target === modalContainer) {
+      modalContainer.style.display = "none";
+    }
+  });
+});
 
 

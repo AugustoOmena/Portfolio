@@ -95,6 +95,15 @@ img {
   }
 }
 
+/* -- Menu hamburguer -- */
+
+.menuh {
+  max-width: 45px;
+  margin-left: 50px;
+  cursor: pointer;
+  position: fixed;
+}
+
 /* -- Configuração geral de Texto -- */
 h1 {
     text-align: center;
@@ -315,3 +324,59 @@ h2 {
   margin-left: 17px;
 }
 
+/*Estilo do Modal*/
+
+.modal-menu-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.modal-menu-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu Hamburguer */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff7f50; /* Coral color, change it as needed */
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  li {
+    display: block;
+    margin: 10px 0;
+  }
+}
