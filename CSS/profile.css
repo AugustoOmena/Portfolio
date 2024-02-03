@@ -314,9 +314,9 @@ a:hover {
 
 @media only screen and (max-width: 938px) {
   .modal-menu-content {
-    width: 80%; /* Ajuste a largura conforme necessário para telas menores */
-    max-width: none; /* Remove a largura máxima */
-    border-radius: 50px; /* Bordas arredondadas nos quatro cantos */
+    width: 80%;
+    max-width: none;
+    border-radius: 50px;
     top: 40%;
   }
 }
@@ -392,16 +392,16 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.project-item {
-  margin: 20px; 
-}
-
 .project-item img {
   max-width: 100%;
+  margin-left: 20px;
 }
 
 @media (max-width: 1232px) {
   .project-container {
     flex-direction: column;
+  }
+  .project-item  img {
+    margin-left: 0;
   }
 }
