@@ -62,34 +62,78 @@
   <h2 style="margin-bottom: 3px;" id="habilidades" class="section__title rosa">
     Minhas Habilidades
   </h2>
-  <h5 id="habilidades" class="section__title">
-    Back-end
-  </h5>
-  <div style="max-width: 700px;" class="container text-center">
-    <div class="row">
-      <div class="col skills__skill">C#</div>
-      <div class="col skills__skill">.Net</div>
-      <div class="col skills__skill">Java</div>
-      <div class="col skills__skill">C++</div>
-    </div>
-    <h5 style="margin-top: 10px;" id="habilidades" class="section__title">
-      Front-end
-    </h5>
-    <div class="row">
-      <div class="col skills__skill">HTML</div>
-      <div class="col skills__skill">CSS</div>
-      <div class="col skills__skill">JavaScript</div>
-      <div class="col skills__skill">React</div>
-      <div class="col skills__skill">TypeScript</div>
-    </div>
-    <h5 style="margin-top: 10px;" id="habilidades" class="section__title">
-      Database
-    </h5>
-    <div class="row">
-      <div class="col skills__skill">Azure</div>
-      <div class="col skills__skill">SQL Server</div>
+
+  <style>
+        .containere {
+      display: flex;
+      justify-content: center;
+    }
+    .quadrado {
+      max-width: 790px;
+      width: 100%;
+      background-color: white;
+      border-radius: 10px; 
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: justify;
+    }
+  </style>
+  <div class="containere">
+    <div class="quadrado">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-weight: 600;">
+              Backend - Aplicações multi-plataforma
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>C# -</strong> É a linguagem que mais gosto e domino. Já desenvolvi alguns aplicativos nativos para Windows, APIs, e também aplicativos web. 
+            </div>
+            <div class="accordion-body">
+              <strong>.NET -</strong> Framework que utilizo para programação de aplicativos C# para web, com arquitetura MVC ou Blazor. 
+            </div>
+            <div class="accordion-body">
+              <strong>Java -</strong> Foi a minha primeira linguagem, no meu primeiro Grand Prix, desenvolvi um algoritmo de manutenção preditiva (prevê quando um motor vai quebrar) com Java e C++ no Arduino, com análise de diversos sensores em tempo real, mas com uma interface bem simples. 
+            </div> 
+            <div class="accordion-body">
+              <strong>C++ -</strong> Aprendi a programar e usar Arduino no Senai, tenho domínio sobre a construção de algoritmos com C++ para Arduino.   
+            </div> 
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-weight: 600;">
+              Frontend - Aplicações Web
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>HTML, CSS, TypeScript -</strong> Adquiri experiência no meu estágio com front-end, atualizado os sites do Angra Tech, e Big Valley. Também já fiz dois cursos de Typescript onde desenvolvi o backend de uma conta bancária, React com alguns projetos simples em estudos, e Angular para fim de conhecer o framework. Apesar de não costumar desenvolver projetos em REACT, Typescript e Angular, me sinto confortável em aprender e trabalhar com essas tecnologias.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="font-weight: 600;">
+              Database - Cloud
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Azure -</strong> Concluí a coleção Azure Developer da Microsoft para conhecer todos os recursos para desenvolvedores da Azure. Também utilizo recursos de hospedagem e armazenamento de banco de dados e blobs.
+            </div>
+            <div class="accordion-body">
+              <strong>SQL Server -</strong> É o banco de dados que costumo utilizar, mas posso me adaptar e aprender outros.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <br>
 
 <!-- Certificados -->
 <h2 id="certificados" class="section__title rosa">
@@ -215,10 +259,13 @@
     <h3 class="section__title">
       Sinta se livre para entrar em contato!
     </h3>
+    
 
   <div class="Certificados espacAbaixo" style="display: flex; justify-content: center; align-items: center; background-color: #f0f0f0;">
     <div class="Certificado" style="max-width: 600px; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-      <form action="#" method="post" class="contact-form" style="display: flex; flex-direction: column;">
+
+      <form action="#" method="post" class="contact-form" style=" display: flex; flex-direction: column;">
+
         <label for="nome" class="contatop">Nome</label>
         <input type="text" id="nome" name="nome" required style="padding: 10px; margin-bottom: 15px; border: 1px solid #ccc;">
   
