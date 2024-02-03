@@ -417,3 +417,11 @@ a:hover {
     margin-left: 0;
   }
 }
+
+/* Contato */
+
+.contatop {
+  margin-bottom: 3px; 
+  font-weight: 550;
+  font-size: 12px;
+}
