@@ -175,78 +175,64 @@
   <a href="Assets/screens/certificados.html" class="botao">Ver todos</a></div>
 
   <!-- PROJECTS -->
-  <section class="projects section" id="projects">
-    <h2 id="projetos" class="section__title rosa">
-      Projetos Recentes
-    </h2>
-    <div class="projects__containter container grid">
-      <article class="projects__card">
-        <img src="Assets/Img/Projetos/Projeto-Omena.png" alt="imagem dos projetos" class="projects__img">
-        <div class="projects__modal">
-          <span class="projects__subtitle">C#</span>
-          <h2 class="projects__title">Manutenção Preditiva</h2>
-          <a id="csharp" href="#csharp" onclick="openModal('modal1')" class="projects__button">
-            Ver demonstração <i class="ri-external-link-line"></i>
-          </a>
-        </div>
-      </article>
+  <style>
+    .project-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-      <article class="projects__card">
-        <img src="Assets/Img/Projetos/Site-AngraTech.png" alt="imagem dos projetos" class="projects__img">
-        <div class="projects__modal">
-          <span class="projects__subtitle">web</span>
-          <h2 class="projects__title">Jogo do Detona Ralph</h2>
-          <a href="#" class="projects__button">
-            Ver demonstração <i class="ri-external-link-line"></i>
-          </a>
-        </div>
-      </article>
+.project-item {
+  margin: 20px; 
+}
 
-      <article class="projects__card">
-        <img src="Assets/Img/Projetos/Site-BigValley.png" alt="imagem dos projetos" class="projects__img">
-        <div class="projects__modal">
-          <span class="projects__subtitle">Typescript</span>
-          <h2 class="projects__title">Sturtup de Serviços</h2>
-          <a href="#" class="projects__button">
-            Ver demonstração <i class="ri-external-link-line"></i>
-          </a>
-        </div>
-      </article>
+.project-item img {
+  max-width: 100%;
+}
 
-      <article class="projects__card">
-        <img src="Assets/Img/Projetos/Projeto-Crachas.png" alt="imagem dos projetos" class="projects__img">
-        <div class="projects__modal">
-          <span class="projects__subtitle">C++</span>
-          <h2 class="projects__title">Gerênciamento Industrial</h2>
-          <a href="#" class="projects__button">
-            Ver demonstração <i class="ri-external-link-line"></i>
-          </a>
-        </div>
-      </article>
+@media (max-width: 1232px) {
+  .project-container {
+    flex-direction: column;
+  }
+}
 
-      <article class="projects__card">
-        <img src="Assets/Img/Projetos/Projeto-Jarvis.png" alt="imagem dos projetos" class="projects__img">
-        <div class="projects__modal">
-          <span class="projects__subtitle">web</span>
-          <h2 class="projects__title">Modern website</h2>
-          <a href="#" class="projects__button">
-            Ver demonstração <i class="ri-external-link-line"></i>
-          </a>
-        </div>
-      </article>
+  </style>
+<section id="projects">
+  <h2 id="projetos" class="section__title rosa">
+    Projetos Recentes
+  </h2>
 
-      <article class="projects__card">
-        <img src="Assets/Img/Projetos/Site-QRcode.png" alt="imagem dos projetos" class="projects__img">
-        <div class="projects__modal">
-          <span class="projects__subtitle">web</span>
-          <h2 class="projects__title">ParquesEJardins</h2>
-          <a href="#" class="projects__button">
-            Ver demonstração <i class="ri-external-link-line"></i>
-          </a>
-        </div>
-      </article>
+  <div class="project-container">
+    <div class="project-item">
+      <img style="margin-left: 50px; width: 700px;" src="Assets\Img\Projetos\Projeto-PC-BigValley.png" alt="Descrição da imagem">
     </div>
-  </section>
+    <div class="project-item">
+      <h3>Site - Big Valley</h3>
+      <p style="max-width: 45ch; text-align: justify;">
+        Fiz a atualização e manutenção do site da comunidade Big Valley (Bahia da Ilha Grande)
+      </p>
+      <button>Ver Detalhes</button>
+    </div>
+  </div>
+</section>
+<section id="projects">
+  
+  <div class="project-container">
+    <div style="margin-left: 100px;" class="project-item">
+      <h3>Site - Big Valley</h3>
+      <p style="max-width: 45ch; text-align: justify;">
+        Fiz a atualização e manutenção do site da comunidade Big Valley (Bahia da Ilha Grande)
+      </p>
+      <button>Ver Detalhes</button>
+    </div>
+        <div class="project-item">
+      <img style="margin-right: 50px; width: 700px;" src="Assets\Img\Projetos\Projeto-PC-BigValley.png" alt="Descrição da imagem">
+    </div>
+  </div>
+</section>
+
+
+  
 
   <!-- Leituras Rápidas -->
   <h2 id="habilidades" class="section__title rosa">
@@ -302,15 +288,6 @@
     </div> 
   </div>
 </div>
-
-  <div id="myModal" class="modal">
-    <!-- Conteúdo do modal -->
-    <div class="modal-content">
-      <span class="close" id="closeModalBtn">&times;</span>
-      <h2>Manutenção Preditiva</h2>
-      <p>informações/p>
-    </div>
-  </div>
 
 <!-- Modal 1 -->
 <div id="modal1" class="modal-projeto" onclick="closeModal('modal1')">

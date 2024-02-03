@@ -1,3 +1,4 @@
+/* Movimenta o Texto */
 document.addEventListener('DOMContentLoaded', () => {
     new TypeIt(".animated", {
         speed: 200,
@@ -21,11 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
-// ----------------------------------------- Carrossel ------------------------------------------------------- */
-
-
-// -------------------------------------- fim Carrossel ------------------------------------------------------- */
-
+/* Tradutor */
 document.addEventListener('DOMContentLoaded', function () {
   const checkbox = document.getElementById('chk');
   const translations = {
@@ -41,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
-  // Declare a variável projectsSection no escopo global
   const projectsSection = document.querySelector('.projects.section h2');
 
   checkbox.addEventListener('change', function () {
@@ -61,26 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-
-// modal
-
-var modal = document.getElementById('myModal');
-var openModalBtn = document.getElementById('openModalBtn');
-var closeModalBtn = document.getElementById('closeModalBtn');
-
-openModalBtn.onclick = function() {
-    modal.style.display = 'block';
-}
-
-closeModalBtn.onclick = function() {
-    modal.style.display = 'none';
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = 'none';
-    }
-}
 
 /* Modais de Projeto */
 function openModal(modalId) {
