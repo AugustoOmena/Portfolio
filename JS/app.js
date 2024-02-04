@@ -58,15 +58,3 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-/* Modais de Projeto */
-function openModal(modalId) {
-  document.getElementById(modalId).style.display = "block";
-  document.body.classList.add('overflow-hidden'); // Adiciona a classe para ocultar a barra de rolagem
-}
-
-function closeModal(modalId) {
-  document.getElementById(modalId).style.display = "none";
-  document.body.classList.remove('overflow-hidden'); // Remove a classe para mostrar a barra de rolagem
-}
-
-

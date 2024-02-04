@@ -31,6 +31,13 @@ body {
   border: 2px solid #000000;
 }
 
+/* titulo */
+.section__title {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 /* -- Social Icons -- */
 .social-icons {
   margin-top: 20px;
@@ -128,91 +135,6 @@ padding: 15px;
 color: #333;
 }
 
-/*-- Projetos -- */
-.projects__containter {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
-  gap: 2rem;
-  padding: 0 180px;
-}
-
-.projects__card{
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.projects__img{
-  width: 100%;
-  height: 100%;
-}
-
-:root {
-  --hue: 330; 
-}
-
-.projects__modal{
-  position: absolute;
-  left: 0;
-  bottom: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg,
-              hsla(0, 0%, 0%, 0) 0%,
-              hsla(var(--hue), 70%, 40%, .8) 120%);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: bottom .4s;
-}
-
-.projects__subtitle,
-.projects__button{
-  color: var(--title-color);
-  font-size: var(--small-font-size);
-}
-
-.projects__subtitle{
-  display: block;
-  margin-bottom: .25rem;
-}
-
-.projects__title{
-  font-size: var(--h2-font-size);
-  margin-bottom: .75rem;
-}
-
-.projects__button{
-  display: flex;
-  align-items: center;
-  column-gap: .5rem;
-  font-weight: var(--font-meddium);
-}
-
-.projects__subtitle,
-.projects__title,
-.projects__button {
-  color: white;
-}
-
-.projects__button i{
-  font-size: 1.25rem;
-}
-
-.projects__card:hover .projects__modal{
-  bottom: 0;
-}
-
-.section__title {
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 /* -- botão -- */
 .checkbox {
   display: none;
@@ -282,114 +204,6 @@ color: #333;
 
 .descricao p {
   margin: 5px 0;
-}
-
-/*Estilo do Modal*/
-.modal-menu-container {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 2;
-}
-
-.modal-menu-content {
-  position: fixed;
-  top: 55px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40%;
-  max-width: 990px;
-  background: #fff;
-  padding: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 30px 30px;
-}
-
-/* Menu Hamburguer */
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-li {
-  display: inline-block;
-  margin: 0 15px;
-}
-
-a {
-  text-decoration: none;
-  color: #555;
-  font-weight: bold;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #ff7f50; /* Coral color, change it as needed */
-}
-
-@media only screen and (max-width: 938px) {
-  .modal-menu-content {
-    width: 80%;
-    max-width: none;
-    border-radius: 50px;
-    top: 40%;
-  }
-}
-
-/* Responsive styles */
-@media only screen and (max-width: 600px) {
-  li {
-    display: block;
-    margin: 10px 0;
-  }
-}
-
-/* modal dos projetos */
-
-.modal-projeto {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  overflow: auto;
-}
-
-.modal-projeto-content {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: auto;
-  width: 80%;
-  max-width: 850px;
-  background: #fff;
-  border-radius: 14px;
-  overflow: hidden;
-}
-
-.modal-projeto-img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  z-index: 3;
-}
-
-.modal-projeto-text {
-  padding: 20px;
-  background: linear-gradient(to bottom, transparent, #fff);
-}
-
-.overflow-hidden {
-  overflow: hidden;
 }
 
 /*-- Bottom --*/
