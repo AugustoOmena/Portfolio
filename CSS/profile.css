@@ -261,12 +261,9 @@ color: #333;
   font-size: 12px;
 }
 
-/* mensagem */
-
 .campo-mensagem {
   min-height: 100vh;
   display: grid;
-  place-items: center;
   padding: 1rem;
   width: 100%;
 }
@@ -286,13 +283,14 @@ button {
 
 input,
 textarea {
-  margin-bottom: 1rem;
+  margin-bottom: 30px;
   color:rgb(150, 150, 150);
   background:#f4f4f4;
   border: 0.125rem solid transparent;
-  border-radius: 1.125rem;
+  border-radius: 0.5rem;
   transition: border-color 0.3s,
   box-shadow 0.3s;
+  max-height: 50px;
 }
 
 input:hover,
@@ -305,7 +303,6 @@ textarea:focus {
 }
 
 label {
-  margin-bottom: 0.5rem;
   color: #84868f;
 }
 
