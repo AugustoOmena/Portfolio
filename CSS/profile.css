@@ -312,7 +312,7 @@ textarea {
   width: 100%;
 }
 
-button {
+.campo-mensagem button {
   border: none;
   border-radius: 99px;
   color: white;
@@ -323,8 +323,8 @@ button {
   height: 55px;
 }
 
-button:hover,
-button:focus {
+.campo-mensagem button:hover,
+.campo-mensagem button:focus {
   outline: none;
   background: #1c70d3;
 }
