@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', function () {
     'pt': {
       'projects-section': 'Projetos Recentes',
       'h2': 'Olá! Eu sou o Augusto',
-      'p': 'Apaixonado pelo desenvolvimento web desde os 18 anos, brasileiro e nascido em 2003. Sou estudante de Análise e Desenvolvimento de Sistemas no Centro Universitário Senac Santo Amaro e Desenvolvedor na Secretaria de Desenvolvimento Econômico de Angra dos Reis. Sou uma pessoa que adora desafios, assim como todo desenvolvedor, mas em especial aqueles que me tiram da zona de conforto, pois as minhas maiores evoluções e aprendizados vieram de momentos em que me vi obrigado a sair dela e enfrentar a vida. Estudante assíduo, que aprecia tomar café nas horas vagas e ...'
+      'p': 'Sou um Desenvolvedor Full Stack com experiência em programação para web, desktop e mobile. Participei de quatro edições do Grand Prix de Inovação no Senai, em uma quinta edição contribui. Essas experiências me permitiram desenvolver projetos desafiadores em equipe, fortalecendo não apenas minhas habilidades técnicas, mas também minha capacidade de colaborar em ambientes dinâmicos de desenvolvimento de software. Estou comprometido em buscar conhecimentos práticos contínuos, sempre procurando oportunidades para aplicar e aprimorar minhas habilidades técnicas. Estou preparado para enfrentar desafios, aprender constantemente e contribuir de maneira significativa para projetos que exijam expertise em programação Full Stack.'
     },
     'en': {
       'projects-section': 'Recent Projects',
       'h2': 'Hello! I am Augusto',
-      'p': 'Passionate about web development since the age of 18, Brazilian, and born in 2003. I am a student of Systems Analysis and Development at Centro Universitário Senac Santo Amaro and a Developer at the Secretariat of Economic Development of Angra dos Reis. I am someone who loves challenges, just like any developer, but especially those that take me out of my comfort zone, as my greatest advancements and learnings have come from moments when I was forced to leave it and face life. Diligent student who enjoys having coffee in his spare time and ...'
+      'p': 'I am a Full Stack Developer with experience in web, desktop, and mobile programming. I have participated in four editions of the Innovation Grand Prix at Senai, and in a fifth edition, I made a contribution. These experiences have allowed me to work on challenging projects as part of a team, enhancing not only my technical skills but also my ability to collaborate in dynamic software development environments. I am committed to continuously seeking practical knowledge, always looking for opportunities to apply and enhance my technical skills. I am prepared to take on challenges, learn constantly, and contribute significantly to projects that demand expertise in Full Stack programming.'
     }
   };
 

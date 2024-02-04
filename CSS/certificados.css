@@ -53,8 +53,8 @@ body {
   }
   
   .Certificado p {
-    text-align: justify; /* Texto justificado */
-    color: #666; /* Cor do texto */
+    text-align: justify;
+    color: #666;
     margin-left: 15px;
   }
   
@@ -63,6 +63,7 @@ body {
   }
 
   .d-flex img {
+    width: 400px;
     margin: 5px;
   }
 
