@@ -61,47 +61,14 @@ body {
   .Certificado img {
     max-width: 250px;
   }
-  @media screen and (max-width: 642px) {
 
-    .d-flex img {
-      max-width: 175px;
-    }
-  }
-  
-  @media screen and (max-width: 568px) {
-
-    .Certificado h3 {
-      font-size: 17px;
-    }
-  
-    .Certificado p {
-      font-size: 9px;
-    }
-  
-    .Certificado img {
-      max-width: 150px;
-    }
-
-    .d-flex img {
-      max-width: 125px;
-    }
-  
+  .d-flex img {
+    margin: 5px;
   }
 
-  @media screen and (max-width: 420px) {
-
-    .Certificado h3 {
-      font-size: 11px;
-    }
-   
-    .Certificado img {
-      max-width: 110px;
-    }
-
-    .d-flex img {
-      max-width: 100px;
-    }
-  
+  .d-flex {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
   @media (min-width: 740px) {

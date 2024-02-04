@@ -94,6 +94,40 @@ img {
   }
 }
 
+/* Minhas Habilidades */
+.containere {
+  display: flex;
+  justify-content: center;
+}
+.quadrado {
+  max-width: 790px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px; 
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: justify;
+  margin: 20px;
+}
+
+.accordion-item {
+background-color: #f0f0f0;
+border: none;
+margin-bottom: 10px;
+}
+
+.accordion-button {
+background-color: #f0f0f0;
+color: #333;
+border: none;
+}
+
+.accordion-body {
+background-color: #f0f0f0;
+padding: 15px;
+color: #333;
+}
+
 /*-- Projetos -- */
 .projects__containter {
   display: grid;
@@ -401,3 +435,4 @@ a:hover {
   font-weight: 550;
   font-size: 12px;
 }
+
