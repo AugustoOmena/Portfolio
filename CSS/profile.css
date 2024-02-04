@@ -99,6 +99,9 @@ img {
   .projects__card {
     margin: 10px; 
   }
+  .project-container p {
+    font-size: 13px;
+  }
 }
 
 /* Minhas Habilidades */
@@ -235,8 +238,8 @@ color: #333;
 .project-container p {
   max-width: 45ch;
   text-align: justify;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 7px;
+  margin-right: 7px;
 }
 
 .project-item img {
