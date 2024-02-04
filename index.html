@@ -255,24 +255,24 @@
       Sinta se livre para entrar em contato!
     </h3>
 
-  <div class="Certificados espacAbaixo" style="display: flex; justify-content: center; align-items: center; background-color: #f0f0f0;">
-    <div class="Certificado" style="max-width: 600px; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-
-      <form action="#" method="post" class="contact-form" style=" display: flex; flex-direction: column;">
-
-        <label for="nome" class="contatop">Nome</label>
-        <input type="text" id="nome" name="nome" required style="padding: 10px; margin-bottom: 15px; border: 1px solid #ccc;">
-  
-        <label for="email" class="contatop style="margin-bottom: 8px;">Email</label>
-        <input type="email" id="email" name="email" required style="padding: 10px; margin-bottom: 15px; border: 1px solid #ccc;">
-  
-        <label for="mensagem" class="contatop style="margin-bottom: 8px;">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" rows="4" required style="padding: 10px; margin-bottom: 15px; border: 1px solid #ccc;"></textarea>
-  
-        <button type="submit" class="contatop style="background-color: #3498db; color: #fff; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer;">
-          Enviar Mensagem
-        </button>
+    <div class="containere">
+      <!--https://formsubmit.co/ajax/augusto.n.omena@gmail.com-->
+      <div class="quadrado campo-mensagem" style="padding-bottom: 60px;">
+        <form action="https://formsubmit.co/ajax/augusto.n.omena@gmail.com"
+        method="POST"
+        data-form
+        class="campo-mensagem"
+        >
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" placeholder="Enter your name" required />    
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required /> 
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" placeholder="  Enter your message" required></textarea>
+        <button type="submit" data-button>Enviar</button>
+        
       </form>
+      </div>
     </div>
   </div>
 

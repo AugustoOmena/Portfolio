@@ -57,4 +57,70 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+class FormSubmit {
+  constructor(settings) {
+    this.settings = settings;
+    this.form = document.querySelector(settings.form);
+    this.formButton = document.querySelector(settings.button);
+    if (this.form) {
+      this.url = this.form.getAttribute("action");
+    }
+  }
 
+  displaySuccess() {
+    this.form.innerHTML = this.settings.success;
+  }
+
+  displayError() {
+    this.form.innerHTML = this.settings.error;
+  }
+
+  getForm() {
+    const formObject = {};
+    const fields = this.form.querySelectorAll("[name]");
+    fields.forEach((field) => {
+      formObject[field.getAttribute("name")] = field.value;
+    });
+    return formObject;
+  }
+
+  async sendForm() {
+    try {
+      await fetch(this.url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(this.getForm()),
+      });
+      this.displaySuccess();
+    } catch (error) {
+      this.displayError();
+      throw new Error(error);
+    }
+  }
+
+  onSubmission(event) {
+    event.preventDefault();
+    event.target.disabled = true;
+    event.target.innerText = "Enviando...";
+    this.sendForm();
+  }
+
+  init() {
+    if (this.form) {
+      this.form.addEventListener("submit", (event) => this.onSubmission(event));
+    }
+    return this;
+  }
+}
+
+const formSubmit = new FormSubmit({
+  form: "[data-form]",
+  button: "[data-button]",
+  success: "<h1 class='success'>Mensagem enviada com sucesso.</h1>   <button type='button' onclick=\"window.location.href='https://augustoomena.github.io/Profile/#contato'\">Abrir Projeto na Posição</button>",
+  error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
+});
+
+formSubmit.init();
