@@ -119,8 +119,7 @@ class FormSubmit {
 const formSubmit = new FormSubmit({
   form: "[data-form]",
   button: "[data-button]",
-  success: "<h1 class='success'>Mensagem enviada com sucesso.</h1>   <button type='button' onclick=\"window.location.href='https://augustoomena.github.io/Profile/#contato'\">Abrir Projeto na Posição</button>",
+  success: "<div class='center'><h5>Envio realizado com Sucesso.</h5></div>",
   error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
 });
-
 formSubmit.init();
