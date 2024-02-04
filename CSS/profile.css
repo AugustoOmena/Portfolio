@@ -220,12 +220,23 @@ color: #333;
   padding-right: 60px;
 }
 
-/* Casos de Estudos */
+/* Casos de Estudos / projetos */
 
 .project-container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.project-container img {
+  width: 100%;
+}
+
+.project-container p {
+  max-width: 45ch;
+  text-align: justify;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .project-item img {
