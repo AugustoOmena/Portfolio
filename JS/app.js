@@ -36,7 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
       'HabilidadesBackendNet': 'Framework que utilizo para programação de aplicativos C# para web, com arquitetura MVC ou Blazor.',
       'HabilidadesBackendJava': 'Foi a minha primeira linguagem, no meu primeiro Grand Prix, desenvolvi um algoritmo de manutenção preditiva (prevê quando um motor vai quebrar) com Java e C++ no Arduino, com análise de diversos sensores em tempo real, mas com uma interface bem simples.',
       'HabilidadesBackendC': 'Aprendi a programar e usar Arduino no Senai, tenho domínio sobre a construção de algoritmos com C++ para Arduino.',
-
+      'tituloHabilidades2': 'Frontend - Aplicações Web',
+      'HabilidadesFront': 'Adquiri experiência no meu estágio com front-end, atualizado os sites do Angra Tech, e Big Valley. Também já fiz dois cursos de Typescript onde desenvolvi o backend de uma conta bancária, React com alguns projetos simples em estudos, e Angular para fim de conhecer o framework. Apesar de não costumar desenvolver projetos em REACT, Typescript e Angular, me sinto confortável em aprender e trabalhar com essas tecnologias.',
+      'HabilidadesData': 'Concluí a coleção Azure Developer da Microsoft para conhecer todos os recursos para desenvolvedores da Azure. Também utilizo recursos de hospedagem e armazenamento de banco de dados e blobs.',
+      'HabilidadesSql': 'É o banco de dados que costumo utilizar, mas posso me adaptar e aprender outros.',
     },
     'en': {
       'projects-section': 'Recent Projects',
@@ -49,6 +52,10 @@ document.addEventListener('DOMContentLoaded', function () {
       'HabilidadesBackendNet': 'Framework that I use for programming C# web applications, with MVC or Blazor architecture.',
       'HabilidadesBackendJava': 'It was my first language, in my first Grand Prix, I developed a predictive maintenance algorithm (predicts when a motor will break) with Java and C++ on Arduino, with analysis of several sensors in real time, but with a very simple interface.',
       'HabilidadesBackendC': 'I learned to program and use Arduino at Senai, I have mastered building algorithms with C++ for Arduino.',
+      'tituloHabilidades2': 'Frontend - Web Applications',
+      'HabilidadesFront': 'I gained experience in my internship with front-end, updated the Angra Tech and Big Valley websites. I`ve also taken two Typescript courses where I developed the backend of a bank account, React with some simple projects in studies, and Angular to get to know the framework. Although I dont usually develop projects in REACT, Typescript and Angular, I feel comfortable learning and working with these technologies.',
+      'HabilidadesData': 'Complete Microsoft´s Azure Developer Collection to learn about all of the resources for Azure developers. I also use hosting and database and blob storage resources.',
+      'HabilidadesSql': 'It`s the database I usually use, but I can adapt and learn others.',
     }
   };
 
@@ -67,8 +74,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const HabilidadesBackendNet = document.querySelector('.containere .habilidadeDotNet');
     const HabilidadesBackendJava = document.querySelector('.containere .habilidadeJava');
     const HabilidadesBackendC = document.querySelector('.containere .habilidadeCplus');
-
-    
+    const tituloHabilidades2 = document.querySelector('.containere .habilidades2-title');
+    const HabilidadesFront = document.querySelector('.containere .habilidadeFrontend');
+    const HabilidadesData = document.querySelector('.containere .habilidadesData');
+    const HabilidadesSql = document.querySelector('.containere .habilidadesSql');
 
 
     if (translations[language]) {
@@ -81,6 +90,12 @@ document.addEventListener('DOMContentLoaded', function () {
       HabilidadesBackendNet.innerText = translations[language]['HabilidadesBackendNet'];
       HabilidadesBackendJava.innerText = translations[language]['HabilidadesBackendJava'];
       HabilidadesBackendC.innerText = translations[language]['HabilidadesBackendC'];
+      tituloHabilidades2.innerText = translations[language]['tituloHabilidades2'];
+      HabilidadesFront.innerText = translations[language]['HabilidadesFront'];
+      HabilidadesData.innerText = translations[language]['HabilidadesData'];
+      HabilidadesSql.innerText = translations[language]['HabilidadesSql'];
+
+
 
     }
     
