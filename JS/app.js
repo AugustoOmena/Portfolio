@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const checkbox = document.getElementById('chk');
   const translations = {
     'pt': {
+      'Titulo': 'Desenvolvedor de Software Fullstack web e mobile',
       'h2': 'Olá! Eu sou o Augusto',
       'p': 'Sou um Desenvolvedor Full Stack com experiência em programação para web, desktop e mobile. Participei de quatro edições do Grand Prix de Inovação no Senai, em uma quinta edição contribui. Essas experiências me permitiram desenvolver projetos desafiadores em equipe, fortalecendo não apenas minhas habilidades técnicas, mas também minha capacidade de colaborar em ambientes dinâmicos de desenvolvimento de software. Estou comprometido em buscar conhecimentos práticos contínuos, sempre procurando oportunidades para aplicar e aprimorar minhas habilidades técnicas. Estou preparado para enfrentar desafios, aprender constantemente e contribuir de maneira significativa para projetos que exijam expertise em programação Full Stack.',
       'tituloHabilidades': 'Minhas Habilidades',
@@ -40,8 +41,19 @@ document.addEventListener('DOMContentLoaded', function () {
       'HabilidadesFront': 'Adquiri experiência no meu estágio com front-end, atualizado os sites do Angra Tech, e Big Valley. Também já fiz dois cursos de Typescript onde desenvolvi o backend de uma conta bancária, React com alguns projetos simples em estudos, e Angular para fim de conhecer o framework. Apesar de não costumar desenvolver projetos em REACT, Typescript e Angular, me sinto confortável em aprender e trabalhar com essas tecnologias.',
       'HabilidadesData': 'Concluí a coleção Azure Developer da Microsoft para conhecer todos os recursos para desenvolvedores da Azure. Também utilizo recursos de hospedagem e armazenamento de banco de dados e blobs.',
       'HabilidadesSql': 'É o banco de dados que costumo utilizar, mas posso me adaptar e aprender outros.',
+      'CasosEstudosTitle': 'Casos de Estudos',
+      'tituloContatos': 'Entre em Contato',
+      'subtituloContatos': 'Sinta se livre para entrar em contato!',
+      'nomeMessage': 'Nome',
+      'mensagemMessage': 'Mensagem',
+      'ButEnviaMensagem': 'Enviar',
+      'BottomContato': 'Contato',
+      'BottomLocaliza': 'Localização',
+      'ButcursosRealizados': 'Ver Cursos realizados',
+      'SubtitleCursos': 'Explore os cursos que já fiz'
     },
     'en': {
+      'Titulo': 'Fullstack web and mobile software developer',
       'projects-section': 'Recent Projects',
       'h2': 'Hello! I am Augusto',
       'p': 'I am a Full Stack Developer with experience in web, desktop, and mobile programming. I have participated in four editions of the Innovation Grand Prix at Senai, and in a fifth edition, I made a contribution. These experiences have allowed me to work on challenging projects as part of a team, enhancing not only my technical skills but also my ability to collaborate in dynamic software development environments. I am committed to continuously seeking practical knowledge, always looking for opportunities to apply and enhance my technical skills. I am prepared to take on challenges, learn constantly, and contribute significantly to projects that demand expertise in Full Stack programming.',
@@ -56,6 +68,16 @@ document.addEventListener('DOMContentLoaded', function () {
       'HabilidadesFront': 'I gained experience in my internship with front-end, updated the Angra Tech and Big Valley websites. I`ve also taken two Typescript courses where I developed the backend of a bank account, React with some simple projects in studies, and Angular to get to know the framework. Although I dont usually develop projects in REACT, Typescript and Angular, I feel comfortable learning and working with these technologies.',
       'HabilidadesData': 'Complete Microsoft´s Azure Developer Collection to learn about all of the resources for Azure developers. I also use hosting and database and blob storage resources.',
       'HabilidadesSql': 'It`s the database I usually use, but I can adapt and learn others.',
+      'CasosEstudosTitle': 'Case Studies',
+      'tituloContatos': 'Contact',
+      'subtituloContatos': 'Feel free to get in touch!',
+      'nomeMessage': 'Name',
+      'mensagemMessage': 'Message',
+      'ButEnviaMensagem': 'Invite',
+      'BottomContato' : 'Contact',
+      'BottomLocaliza': 'Location',
+      'ButcursosRealizados': 'See Courses taken',
+      'SubtitleCursos': 'Explore the courses I´ve already taken'
     }
   };
 
@@ -65,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   function translateContent(language) {
+    const Titulo = document.querySelector('.titulo');
     const h2 = document.querySelector('.content-section h2');
     const p = document.querySelector('.content-section .minibiola');
     const tituloHabilidades = document.querySelector('.containere .habilidades-title');
@@ -78,9 +101,24 @@ document.addEventListener('DOMContentLoaded', function () {
     const HabilidadesFront = document.querySelector('.containere .habilidadeFrontend');
     const HabilidadesData = document.querySelector('.containere .habilidadesData');
     const HabilidadesSql = document.querySelector('.containere .habilidadesSql');
+    const CasosEstudosTitle = document.querySelector('.CasosEstudos-Title');
+    const tituloContatos = document.querySelector('.contato-title');
+    const subtituloContatos = document.querySelector('.contato-subtitle');
+
+    //bototm
+    const nomeMessage = document.querySelector('.nomeEnviaMessage');
+    const mensagemMessage = document.querySelector('.mensagemEnviaMessage');
+    const ButEnviaMensagem = document.querySelector('.butEnviaMensagem');
+    const BottomContato = document.querySelector('.bottomContato');
+    const BottomLocaliza = document.querySelector('.bottomLocaliza');
+    const ButcursosRealizados = document.querySelector('.butcursosRealizados');
+    const SubtitleCursos = document.querySelector('.subtitleCursos');
+
+
 
 
     if (translations[language]) {
+      Titulo.innerText = translations[language]['Titulo'];
       h2.innerText = translations[language]['h2'];
       p.innerText = translations[language]['p'];
       tituloHabilidades.innerText = translations[language]['tituloHabilidades'];
@@ -94,7 +132,18 @@ document.addEventListener('DOMContentLoaded', function () {
       HabilidadesFront.innerText = translations[language]['HabilidadesFront'];
       HabilidadesData.innerText = translations[language]['HabilidadesData'];
       HabilidadesSql.innerText = translations[language]['HabilidadesSql'];
+      CasosEstudosTitle.innerText = translations[language]['CasosEstudosTitle'];
+      tituloContatos.innerText = translations[language]['tituloContatos'];
+      subtituloContatos.innerText = translations[language]['subtituloContatos'];
 
+      //bottom
+      nomeMessage.innerText = translations[language]['nomeMessage'];
+      mensagemMessage.innerText = translations[language]['mensagemMessage'];
+      ButEnviaMensagem.innerText = translations[language]['ButEnviaMensagem'];
+      BottomContato.innerText = translations[language]['BottomContato'];
+      BottomLocaliza.innerText = translations[language]['BottomLocaliza'];
+      ButcursosRealizados.innerText = translations[language]['ButcursosRealizados'];
+      SubtitleCursos.innerText = translations[language]['SubtitleCursos'];
 
 
     }

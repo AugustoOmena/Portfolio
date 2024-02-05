@@ -42,7 +42,7 @@
     <img src="Assets/Img/Nome.png" alt="Foto de Augusto Omena" class="profile-picture">
     <h1><span class="animated"></span></h1>
     <p id="titulo" 
-       class="about-me">Desenvolvedor de Software Fullstack web e mobile <br>
+       class="about-me"><span class="titulo">Desenvolvedor de Software Fullstack web e mobile</span> <br>
                         .Net | Java | React | Azure | Ruby | Javascript | Python | C++</p>
     <div class="social-icons">
       <a href="mailto:augusto.n.omena@gmail.com" target="_blank" title="Email"><img
@@ -213,7 +213,7 @@
                >
     <h6 style="margin-top: 30px;
         color:rgb(150, 150, 150)" 
-        class="section__title">Explore os cursos que já fiz
+        class="section__title subtitleCursos">Explore os cursos que já fiz
     </h6>
     <h2 style="margin-bottom: 3px;" 
         id="habilidades" 
@@ -240,7 +240,7 @@
         <h2 class="accordion-header" 
             id="headingFive"
             >
-          <button class="accordion-button" 
+          <button class="accordion-button butcursosRealizados" 
                   type="button" 
                   data-bs-toggle="collapse" 
                   data-bs-target="#collapseFive" 
@@ -353,7 +353,7 @@
 <!-- Projetos -->
 <section id="projects">
   <h2 id="projetos" 
-      class="section__title rosa" 
+      class="section__title rosa CasosEstudos-Title" 
       style="margin-bottom: 0px; 
              margin-top: 30px;">
              Casos de Estudos
@@ -456,12 +456,12 @@
   <div style="background-color: #f0f0f0; width: 100%;"
   >
     <h2 id="contato" 
-        class="section__title rosa" 
+        class="section__title rosa contato-title" 
         style="margin-bottom: 20px; padding-top: 30px; text-align: center;">
         Entre em Contato
     </h2
     >
-    <h3 class="section__title">
+    <h3 class="section__title contato-subtitle">
       Sinta se livre para entrar em contato!
     </h3
     >
@@ -474,7 +474,8 @@
               data-form
               class="campo-mensagem"
         >
-        <label for="nome">
+        <label for="nome" 
+               class="nomeEnviaMessage">
           Nome
         </label>
         <input type="text" 
@@ -484,7 +485,7 @@
                required 
          />    
         <label for="email">
-          E-mail
+          Email
         </label>
         <input type="email" 
                name="email" 
@@ -492,7 +493,8 @@
                placeholder="Enter your email" 
                required 
          /> 
-        <label for="mensagem">
+        <label for="mensagem" 
+               class="mensagemEnviaMessage">
           Mensagem
         </label>
         <textarea name="mensagem" 
@@ -501,6 +503,7 @@
                   required>
         </textarea>
         <button type="submit" 
+                class="butEnviaMensagem"
                 data-button>Enviar
         </button>       
       </form>
@@ -552,7 +555,7 @@
     >
       <div class="col"
       >
-        <h4 class="rosa">
+        <h4 class="rosa bottomContato">
           Contato
         </h4>
         55+ 24981021079<br>
@@ -560,7 +563,7 @@
       </div>
 
       <div class="col">
-        <h4 class="rosa">Localização</h4>
+        <h4 class="rosa bottomLocaliza">Localização</h4>
         Angra dos Reis - RJ<br>
       </div>
     </div>
@@ -568,7 +571,7 @@
      <div class="row"
      >
       <div class="col-sm">
-        Augusto do Nascimento Omena - Portfólio
+        Augusto do Nascimento Omena
       </div>
     </div> 
   </div>
