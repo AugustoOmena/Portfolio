@@ -9,7 +9,7 @@ body {
   color: transparent;
 }
 
-.espacAbaixo {
+.espac10Abaixo {
   margin-bottom: 10px;
 }
 
@@ -274,7 +274,7 @@ color: #333;
 }
 
 input,
-textarea
+textarea,
 button {
   width: 100%;
   font: inherit;
@@ -285,7 +285,7 @@ button {
 input,
 textarea {
   margin-bottom: 30px;
-  color:rgb(150, 150, 150);
+  color:rgb(99, 99, 99);
   background:#f4f4f4;
   border: 0.125rem solid transparent;
   border-radius: 0.5rem;
@@ -334,3 +334,9 @@ button:disabled {
   cursor: not-allowed;
   background: #b7b7b7;
 }
+
+input::placeholder,
+textarea::placeholder {
+  color: #c7c7c7;
+}
+
