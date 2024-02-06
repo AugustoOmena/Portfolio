@@ -218,3 +218,21 @@ const formSubmit = new FormSubmit({
   error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
 });
 formSubmit.init();
+
+// video provisorio
+
+function togglePlayPause() {
+  var video = document.querySelector('.custom-video');
+  var container = document.querySelector('.custom-video-container');
+  var button = document.querySelector('.play-pause-button');
+
+  if (video.paused) {
+    video.play();
+    container.classList.add('playing');
+    button.style.backgroundImage = 'url("path/to/pause-icon.png")'; /* Altere para o ícone de pausa */
+  } else {
+    video.pause();
+    container.classList.remove('playing');
+    button.style.backgroundImage = 'url("https://cdn-icons-png.flaticon.com/512/0/375.png")'; /* Altere para o ícone de play */
+  }
+}
