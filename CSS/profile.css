@@ -343,8 +343,7 @@ textarea::placeholder {
 /* video provisorio */
 .custom-video-container {
   position: relative;
-  width: 700px;
-
+  max-width: 700px;
   overflow: hidden;
 }
 
@@ -352,6 +351,8 @@ textarea::placeholder {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .play-pause-button {
