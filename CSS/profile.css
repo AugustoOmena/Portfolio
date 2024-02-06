@@ -362,8 +362,8 @@ textarea::placeholder {
   transform: translate(-50%, -50%);
   background-color: transparent;
   border: none;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   background-image: url('https://cdn-icons-png.flaticon.com/512/0/375.png'); 
   background-size: cover;
   cursor: pointer;
