@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .move(20)
       .delete(21)
       .type('Take a look at my projects', {delay: 2700})
-    .go();
-      
+    .go();  
 
 })
 
@@ -50,7 +49,11 @@ document.addEventListener('DOMContentLoaded', function () {
       'BottomContato': 'Contato',
       'BottomLocaliza': 'Localização',
       'ButcursosRealizados': 'Ver Cursos realizados',
-      'SubtitleCursos': 'Explore os cursos que já fiz'
+      'SubtitleCursos': 'Explore os cursos que já fiz',
+      'ProjDescBV': 'Coolaborei com o Frontend do site da BigValley, que é " A comunidade é o encontro de pessoas de todas as áreas, pensando tecnologia e inovação para soluções de problemas e desenvolvimento da economia de Angra dos Reis e Baia da Ilha Grande."',
+      'ProjDescAT': 'Contribuí ativamente para o sucesso da mais recente edição do evento Angra Tech, uma experiência espetacular que congregou mentes brilhantes, empresas e startups inovadoras. Participei ativamente de uma atmosfera enriquecedora, onde o compartilhamento de conhecimento e networking foi extraordinário.',
+      'ProjDescQR': 'Fui parte integrante na criação do site que, por meio de QR codes instalados nas árvores da Praça do Porto, fornece informações sobre as diferentes espécies arbóreas presentes no local.',
+      'ProjDescOm': 'Desenvolvi um aplicativo em C# para Windows, que antecipa possíveis falhas em motores por meio de um Arduino equipado com sensores. O sistema notifica os status relevantes por meio do WhatsApp no ambiente do SENAI.',
     },
     'en': {
       'Titulo': 'Fullstack web and mobile software developer',
@@ -77,7 +80,11 @@ document.addEventListener('DOMContentLoaded', function () {
       'BottomContato' : 'Contact',
       'BottomLocaliza': 'Location',
       'ButcursosRealizados': 'See Courses taken',
-      'SubtitleCursos': 'Explore the courses I´ve already taken'
+      'SubtitleCursos': 'Explore the courses I´ve already taken',
+      'ProjDescBV': 'I collaborated with the Frontend of the BigValley website, which is "The community is the meeting of people from all areas, thinking about technology and innovation to solve problems and develop the economy of Angra dos Reis and Baia da Ilha Grande."',
+      'ProjDescAT': 'I contributed to the success of the most recent edition of the Angra Tech event, a spectacular experience that brought together innovative minds, companies and startups. I actively participated in an enriching atmosphere, where knowledge sharing and networking was extraordinary.',
+      'ProjDescQR': 'I was an integral part in creating the website which, through QR codes installed on the trees in Praça do Porto, provides information about the different tree species present in the place.',
+      'ProjDescOm': 'I developed an application in C# for Windows, which anticipates possible engine failures using an Arduino equipped with sensors. The system notifies relevant statuses through WhatsApp in the SENAI environment.',
     }
   };
 
@@ -102,10 +109,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const HabilidadesData = document.querySelector('.containere .habilidadesData');
     const HabilidadesSql = document.querySelector('.containere .habilidadesSql');
     const CasosEstudosTitle = document.querySelector('.CasosEstudos-Title');
-    const tituloContatos = document.querySelector('.contato-title');
-    const subtituloContatos = document.querySelector('.contato-subtitle');
+    const ProjDescBV = document.querySelector('.ProjBigValleyDesc'); 
+    const ProjDescAT = document.querySelector('.ProjAngraTech'); 
+    const ProjDescQR = document.querySelector('.ProjQR');
+    const ProjDescOm = document.querySelector('.ProjOmena');
 
-    //bototm
+
+    
+    const tituloContatos = document.querySelector('.contato-title');
+    const subtituloContatos = document.querySelector('.contato-subtitle'); 
+
+
     const nomeMessage = document.querySelector('.nomeEnviaMessage');
     const mensagemMessage = document.querySelector('.mensagemEnviaMessage');
     const ButEnviaMensagem = document.querySelector('.butEnviaMensagem');
@@ -133,10 +147,14 @@ document.addEventListener('DOMContentLoaded', function () {
       HabilidadesData.innerText = translations[language]['HabilidadesData'];
       HabilidadesSql.innerText = translations[language]['HabilidadesSql'];
       CasosEstudosTitle.innerText = translations[language]['CasosEstudosTitle'];
+      ProjDescBV.innerText = translations[language]['ProjDescBV'];
+      ProjDescAT.innerText = translations[language]['ProjDescAT'];
+      ProjDescQR.innerText = translations[language]['ProjDescQR'];
+      ProjDescOm.innerText = translations[language]['ProjDescOm'];
+
       tituloContatos.innerText = translations[language]['tituloContatos'];
       subtituloContatos.innerText = translations[language]['subtituloContatos'];
 
-      //bottom
       nomeMessage.innerText = translations[language]['nomeMessage'];
       mensagemMessage.innerText = translations[language]['mensagemMessage'];
       ButEnviaMensagem.innerText = translations[language]['ButEnviaMensagem'];
