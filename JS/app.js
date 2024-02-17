@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
       'tituloCursos': 'Cursos de Aperfeiçoamento',
       'HabilidadesBackend': 'Backend - Aplicações Multi-Plataforma',
       'HabilidadesBackendCsharp': ' É a linguagem que mais gosto e domino. Já desenvolvi alguns aplicativos nativos para Windows, APIs, e também aplicativos web.',
-      'HabilidadesBackendNet': 'Framework que utilizo para programação de aplicativos C# para web, com arquitetura MVC ou Blazor.',
-      'HabilidadesBackendJava': 'Foi a minha primeira linguagem, no meu primeiro Grand Prix, desenvolvi um algoritmo de manutenção preditiva (prevê quando um motor vai quebrar) com Java e C++ no Arduino, com análise de diversos sensores em tempo real, mas com uma interface bem simples.',
+      'HabilidadesBackendNet': 'Tive meu primeiro contato com a arquitetura explorando a criação de aplicativos web com C#, criando Cruds de clientes e produtos. Gosto muito e me aprofundo cada vez mais na criação de Aplicativos Web. Estou disposto a me aventurar no MVC com Ruby ou Java.',
+      'HabilidadesBackendJava': 'Foi a primeira linguagem que estudei, programei bastante em java com aplicativos de console, e posteriormente na faculdade com projetos web. ',
       'HabilidadesBackendC': 'Aprendi a programar e usar Arduino no Senai, tenho domínio sobre a construção de algoritmos com C++ para Arduino.',
       'tituloHabilidades2': 'Frontend - Aplicações Web',
       'HabilidadesFront': 'Tenho domínio de HTML, CSS, e Javascript, Além disso, já utilizei outras tecnologias ligadas ao front-end como React, Typescript e Angular.',
@@ -64,8 +64,8 @@ document.addEventListener('DOMContentLoaded', function () {
       'tituloCursos': 'Improvement courses',
       'HabilidadesBackend': 'Backend - Multi-Platform Applications',
       'HabilidadesBackendCsharp': ' It`s the language I like and master the most. I have already developed some native applications for Windows, APIs, and also web applications.',
-      'HabilidadesBackendNet': 'Framework that I use for programming C# web applications, with MVC or Blazor architecture.',
-      'HabilidadesBackendJava': 'It was my first language, in my first Grand Prix, I developed a predictive maintenance algorithm (predicts when a motor will break) with Java and C++ on Arduino, with analysis of several sensors in real time, but with a very simple interface.',
+      'HabilidadesBackendNet': 'I had my first contact with architecture exploring the creation of web applications with C#, creating customer and product Cruds. I really like it and I`m going deeper and deeper into creating Web Applications. I`m willing to venture into MVC with Ruby or Java.',
+      'HabilidadesBackendJava': 'It was the first language I studied, I programmed a lot in Java with console applications, and later in college with web projects.',
       'HabilidadesBackendC': 'I learned to program and use Arduino at Senai, I have mastered building algorithms with C++ for Arduino.',
       'tituloHabilidades2': 'Frontend - Web Applications',
       'HabilidadesFront': 'I am proficient in HTML, CSS, and Javascript. In addition, I have used other technologies linked to the front-end such as React, Typescript and Angular.',
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-/* Formulário de mensagem - formato assíncrono */
+/* Envia Mensagem para mim */
 class FormSubmit {
   constructor(settings) {
     this.settings = settings;
@@ -237,7 +237,7 @@ const formSubmit = new FormSubmit({
 });
 formSubmit.init();
 
-// video provisorio
+/* Video do projeto */
 
 function togglePlayPause() {
   var video = document.querySelector('.custom-video');

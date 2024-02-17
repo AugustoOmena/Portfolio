@@ -2,7 +2,6 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
-/* Cor Gradiant */
 .rosa {
   background: linear-gradient(to right, #FF0050, #7A358B); 
   -webkit-background-clip: text; 
