@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', function () {
       'HabilidadesBackendCsharp': ' É a linguagem que mais gosto e domino. Já desenvolvi alguns aplicativos nativos para Windows, APIs, e também aplicativos web.',
       'HabilidadesBackendNet': 'Tive meu primeiro contato com a arquitetura explorando a criação de aplicativos web com C#, criando Cruds de clientes e produtos. Gosto muito e me aprofundo cada vez mais na criação de Aplicativos Web. Estou disposto a me aventurar no MVC com Ruby ou Java.',
       'HabilidadesBackendJava': 'Foi a primeira linguagem que estudei, programei bastante em java com aplicativos de console, e posteriormente na faculdade com projetos web. ',
+      'HabilidadesBackendRuby': 'Estou aprendendo sua sintaxe e resolvendo desafios, gosto da linguagem por ser muito eficiente, limpa e expressiva. Tenho a vontade de trabalhar com seu framework Rails, qual sou um pouco familiarizado.',
+      'HabilidadesBackendTDD': ' Aprendi a utilizar o básico sobre testes unitários, utilizando Jest para JavaScript, RSpec para Ruby, e xUnit Para C#. Estou aberto a aprender novas ferramentas de testes unitários. ',
       'HabilidadesBackendC': 'Aprendi a programar e usar Arduino no Senai, tenho domínio sobre a construção de algoritmos com C++ para Arduino.',
       'tituloHabilidades2': 'Frontend - Aplicações Web',
       'HabilidadesFront': 'Tenho domínio de HTML, CSS, e Javascript, Além disso, já utilizei outras tecnologias ligadas ao front-end como React, Typescript e Angular.',
@@ -50,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'BottomLocaliza': 'Localização',
       'ButcursosRealizados': 'Ver Cursos realizados',
       'SubtitleCursos': 'Explore os cursos que já fiz',
+      'SubtitleHabilidades': 'Voce encontra exemplos de minhas habilidades no meu perfil GitHub',
       'ProjDescBV': 'Coolaborei com o Frontend do site da BigValley, que é " A comunidade é o encontro de pessoas de todas as áreas, pensando tecnologia e inovação para soluções de problemas e desenvolvimento da economia de Angra dos Reis e Baia da Ilha Grande."',
       'ProjDescAT': 'Contribuí ativamente para o sucesso da mais recente edição do evento Angra Tech, uma experiência espetacular que congregou mentes brilhantes, empresas e startups inovadoras. Participei ativamente de uma atmosfera enriquecedora, onde o compartilhamento de conhecimento e networking foi extraordinário.',
       'ProjDescQR': 'Fui parte integrante na criação do site que, por meio de QR codes instalados nas árvores da Praça do Porto, fornece informações sobre as diferentes espécies arbóreas presentes no local.',
@@ -66,6 +69,9 @@ document.addEventListener('DOMContentLoaded', function () {
       'HabilidadesBackendCsharp': ' It`s the language I like and master the most. I have already developed some native applications for Windows, APIs, and also web applications.',
       'HabilidadesBackendNet': 'I had my first contact with architecture exploring the creation of web applications with C#, creating customer and product Cruds. I really like it and I`m going deeper and deeper into creating Web Applications. I`m willing to venture into MVC with Ruby or Java.',
       'HabilidadesBackendJava': 'It was the first language I studied, I programmed a lot in Java with console applications, and later in college with web projects.',
+      'HabilidadesBackendRuby': 'I´m learning its syntax and solving challenges, I like the language because it´s very efficient, clean and expressive. I want to work with your Rails framework, which I am somewhat familiar with.',
+      'HabilidadesBackendTDD': 'I learned to use the basics of unit testing, using Jest for JavaScript, RSpec for Ruby, and xUnit for C#. I´m open to learning new unit testing tools.',
+
       'HabilidadesBackendC': 'I learned to program and use Arduino at Senai, I have mastered building algorithms with C++ for Arduino.',
       'tituloHabilidades2': 'Frontend - Web Applications',
       'HabilidadesFront': 'I am proficient in HTML, CSS, and Javascript. In addition, I have used other technologies linked to the front-end such as React, Typescript and Angular.',
@@ -81,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'BottomLocaliza': 'Location',
       'ButcursosRealizados': 'See Courses taken',
       'SubtitleCursos': 'Explore the courses I´ve already taken',
+      'SubtitleHabilidades': 'You can find examples of my skills on my GitHub profile',
       'ProjDescBV': 'I collaborated with the Frontend of the BigValley website, which is "The community is the meeting of people from all areas, thinking about technology and innovation to solve problems and develop the economy of Angra dos Reis and Baia da Ilha Grande."',
       'ProjDescAT': 'I contributed to the success of the most recent edition of the Angra Tech event, a spectacular experience that brought together innovative minds, companies and startups. I actively participated in an enriching atmosphere, where knowledge sharing and networking was extraordinary.',
       'ProjDescQR': 'I was an integral part in creating the website which, through QR codes installed on the trees in Praça do Porto, provides information about the different tree species present in the place.',
@@ -103,6 +110,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const HabilidadesBackendCsharp = document.querySelector('.containere .habilidadeCsharp');
     const HabilidadesBackendNet = document.querySelector('.containere .habilidadeDotNet');
     const HabilidadesBackendJava = document.querySelector('.containere .habilidadeJava');
+    const HabilidadesBackendRuby = document.querySelector('.containere .habilidadeRuby');
+    const HabilidadesBackendTDD = document.querySelector('.containere .habilidadeTDD');
+
+
     const HabilidadesBackendC = document.querySelector('.containere .habilidadeCplus');
     const tituloHabilidades2 = document.querySelector('.containere .habilidades2-title');
     const HabilidadesFront = document.querySelector('.containere .habilidadeFrontend');
@@ -126,7 +137,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const BottomContato = document.querySelector('.bottomContato');
     const BottomLocaliza = document.querySelector('.bottomLocaliza');
     const ButcursosRealizados = document.querySelector('.butcursosRealizados');
+    const SubtitleHabilidades = document.querySelector('.subtitleHabilidades');
     const SubtitleCursos = document.querySelector('.subtitleCursos');
+
 
 
 
@@ -141,6 +154,9 @@ document.addEventListener('DOMContentLoaded', function () {
       HabilidadesBackendCsharp.innerText = translations[language]['HabilidadesBackendCsharp'];
       HabilidadesBackendNet.innerText = translations[language]['HabilidadesBackendNet'];
       HabilidadesBackendJava.innerText = translations[language]['HabilidadesBackendJava'];
+      HabilidadesBackendRuby.innerText = translations[language]['HabilidadesBackendRuby'];
+      HabilidadesBackendTDD.innerText = translations[language]['HabilidadesBackendTDD'];
+
       HabilidadesBackendC.innerText = translations[language]['HabilidadesBackendC'];
       tituloHabilidades2.innerText = translations[language]['tituloHabilidades2'];
       HabilidadesFront.innerText = translations[language]['HabilidadesFront'];
@@ -162,6 +178,7 @@ document.addEventListener('DOMContentLoaded', function () {
       BottomLocaliza.innerText = translations[language]['BottomLocaliza'];
       ButcursosRealizados.innerText = translations[language]['ButcursosRealizados'];
       SubtitleCursos.innerText = translations[language]['SubtitleCursos'];
+      SubtitleHabilidades.innerText = translations[language]['SubtitleHabilidades'];
 
 
     }
