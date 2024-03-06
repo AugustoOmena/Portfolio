@@ -1,7 +1,7 @@
 /* Movimenta o Texto */
 document.addEventListener('DOMContentLoaded', () => {
     new TypeIt(".animated", {
-        speed: 90,
+        speed: 120,
         loop: true
     }).type('Software Developer', {delay: 2000})
       .delete(18, { delay: 70})
