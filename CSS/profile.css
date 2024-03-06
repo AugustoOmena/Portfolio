@@ -118,7 +118,7 @@ img {
   padding: 20px;
   text-align: justify;
   margin: 20px;
-
+  width: 100%;
 }
 
 .accordion-item {
