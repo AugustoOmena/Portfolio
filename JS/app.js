@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
       'h2': 'Olá! Eu sou o Augusto',
       'p': 'Sou apaixonado por progranação Back-end, atualmente faço estágio de ADS. Sou um estudante focado e comprometido, com conhecimento Full Stack, conheço um pouco de muitas ferramentas, e tenho minhas favoritas qual eu me aprofundo mais. Participei de quatro edições do Grand Prix de Inovação no Senai, em uma quinta edição contribui. Essas experiências junto com meu estágio me permitiram desenvolver projetos desafiadores em equipe, fortalecendo não apenas minhas habilidades técnicas, mas também minha capacidade de colaborar em ambientes dinâmicos de desenvolvimento de software. Estou preparado para enfrentar desafios, aprender constantemente e contribuir em novas oportunidades.',
       'tituloHabilidades': 'Minhas Habilidades',
-      'tituloCursos': 'Cursos de Aperfeiçoamento',
       'HabilidadesBackend': 'Backend - Aplicações Multi-Plataforma',
       'HabilidadesBackendCsharp': ' É a linguagem que mais gosto e domino. Já desenvolvi alguns aplicativos nativos para Windows, APIs, e também aplicativos web.',
       'HabilidadesBackendNet': 'Tive meu primeiro contato com a arquitetura explorando a criação de aplicativos web com C#, criando Cruds de clientes e produtos. Gosto muito e me aprofundo cada vez mais na criação de Aplicativos Web. Estou disposto a me aventurar no MVC com Ruby ou Java.',
@@ -39,8 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
       'ButEnviaMensagem': 'Enviar',
       'BottomContato': 'Contato',
       'BottomLocaliza': 'Localização',
-      'ButcursosRealizados': 'Ver Cursos realizados',
-      'SubtitleCursos': 'Explore os cursos que já fiz',
       'SubtitleHabilidades': 'Voce encontra exemplos de minhas habilidades no meu perfil GitHub',
       'ProjDescBV': 'Coolaborei com o Frontend do site da BigValley, que é " A comunidade é o encontro de pessoas de todas as áreas, pensando tecnologia e inovação para soluções de problemas e desenvolvimento da economia de Angra dos Reis e Baia da Ilha Grande."',
       'ProjDescAT': 'Contribuí ativamente para o sucesso da mais recente edição do evento Angra Tech, uma experiência espetacular que congregou mentes brilhantes, empresas e startups inovadoras. Participei ativamente de uma atmosfera enriquecedora, onde o compartilhamento de conhecimento e networking foi extraordinário.',
@@ -52,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
       'h2': 'Hello! I am Augusto',
       'p': 'I´m passionate about Back-end programming, I´m currently doing an ADS internship. I am a focused and committed student, with Full Stack knowledge, I know a little about many tools, and I have my favorites which I delve into more deeply. I participated in four editions of the Innovation Grand Prix at Senai, and in a fifth edition I contributed. These experiences along with my internship allowed me to develop challenging projects as a team, strengthening not only my technical skills, but also my ability to collaborate in dynamic software development environments. I am prepared to face challenges, constantly learn and contribute to new opportunities.',
       'tituloHabilidades': 'My Skills',
-      'tituloCursos': 'Improvement courses',
       'HabilidadesBackend': 'Backend - Multi-Platform Applications',
       'HabilidadesBackendCsharp': ' It`s the language I like and master the most. I have already developed some native applications for Windows, APIs, and also web applications.',
       'HabilidadesBackendNet': 'I had my first contact with architecture exploring the creation of web applications with C#, creating customer and product Cruds. I really like it and I`m going deeper and deeper into creating Web Applications. I`m willing to venture into MVC with Ruby or Java.',
@@ -73,8 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
       'ButEnviaMensagem': 'Invite',
       'BottomContato' : 'Contact',
       'BottomLocaliza': 'Location',
-      'ButcursosRealizados': 'See Courses taken',
-      'SubtitleCursos': 'Explore the courses I´ve already taken',
       'SubtitleHabilidades': 'You can find examples of my skills on my GitHub profile',
       'ProjDescBV': 'I collaborated with the Frontend of the BigValley website, which is "The community is the meeting of people from all areas, thinking about technology and innovation to solve problems and develop the economy of Angra dos Reis and Baia da Ilha Grande."',
       'ProjDescAT': 'I contributed to the success of the most recent edition of the Angra Tech event, a spectacular experience that brought together innovative minds, companies and startups. I actively participated in an enriching atmosphere, where knowledge sharing and networking was extraordinary.',
@@ -92,7 +86,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const h2 = document.querySelector('.content-section h2');
     const p = document.querySelector('.content-section .minibiola');
     const tituloHabilidades = document.querySelector('.containere .habilidades-title');
-    const tituloCursos = document.querySelector('.containere .cursos-title');
     const HabilidadesBackend = document.querySelector('.containere .habilidadesBackend');
     const HabilidadesBackendCsharp = document.querySelector('.containere .habilidadeCsharp');
     const HabilidadesBackendNet = document.querySelector('.containere .habilidadeDotNet');
@@ -123,9 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const ButEnviaMensagem = document.querySelector('.butEnviaMensagem');
     const BottomContato = document.querySelector('.bottomContato');
     const BottomLocaliza = document.querySelector('.bottomLocaliza');
-    const ButcursosRealizados = document.querySelector('.butcursosRealizados');
     const SubtitleHabilidades = document.querySelector('.subtitleHabilidades');
-    const SubtitleCursos = document.querySelector('.subtitleCursos');
 
 
 
@@ -135,7 +126,6 @@ document.addEventListener('DOMContentLoaded', function () {
       h2.innerText = translations[language]['h2'];
       p.innerText = translations[language]['p'];
       tituloHabilidades.innerText = translations[language]['tituloHabilidades'];
-      tituloCursos.innerText = translations[language]['tituloCursos'];
       HabilidadesBackend.innerText = translations[language]['HabilidadesBackend'];
       HabilidadesBackendCsharp.innerText = translations[language]['HabilidadesBackendCsharp'];
       HabilidadesBackendNet.innerText = translations[language]['HabilidadesBackendNet'];
@@ -162,8 +152,6 @@ document.addEventListener('DOMContentLoaded', function () {
       ButEnviaMensagem.innerText = translations[language]['ButEnviaMensagem'];
       BottomContato.innerText = translations[language]['BottomContato'];
       BottomLocaliza.innerText = translations[language]['BottomLocaliza'];
-      ButcursosRealizados.innerText = translations[language]['ButcursosRealizados'];
-      SubtitleCursos.innerText = translations[language]['SubtitleCursos'];
       SubtitleHabilidades.innerText = translations[language]['SubtitleHabilidades'];
 
 
@@ -239,36 +227,3 @@ const formSubmit = new FormSubmit({
   error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
 });
 formSubmit.init();
-
-/* Video do projeto */
-
-function togglePlayPause() {
-  var video = document.querySelector('.custom-video');
-  var container = document.querySelector('.custom-video-container');
-  var button = document.querySelector('.play-pause-button');
-
-  if (video.paused) {
-    video.play();
-    container.classList.add('playing');
-    button.style.backgroundImage = 'url("path/to/pause-icon.png")'; /* Altere para o ícone de pausa */
-  } else {
-    video.pause();
-    container.classList.remove('playing');
-    button.style.backgroundImage = 'url("https://cdn-icons-png.flaticon.com/512/0/375.png")'; /* Altere para o ícone de play */
-  }
-}
-
-var gif = document.getElementById('meuGif');
-
-// Adiciona um ouvinte de evento de clique ao GIF
-gif.addEventListener('click', toggleAnimation);
-
-function toggleAnimation() {
-    if (gif.style.animationPlayState === 'running') {
-        // Pausa a animação se estiver em execução
-        gif.style.animationPlayState = 'paused';
-    } else {
-        // Inicia a animação se estiver pausada
-        gif.style.animationPlayState = 'running';
-    }
-}

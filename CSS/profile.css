@@ -6,6 +6,8 @@ body {
   background: linear-gradient(to right, #FF0050, #7A358B); 
   -webkit-background-clip: text; 
   color: transparent;
+  font-weight: 600;
+  font-size: 2.5rem;
 }
 
 .espac10Abaixo {
@@ -116,7 +118,7 @@ img {
   padding: 20px;
   text-align: justify;
   margin: 20px;
-  width: 100%;
+
 }
 
 .accordion-item {
@@ -224,35 +226,19 @@ color: #333;
 
 /* Casos de Estudos / projetos */
 
-.project-container {
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.projects img {
+  max-width: 30px;
+}
+
+heading {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.project-container img {
-  width: 100%;
-}
-
-.project-container p {
-  max-width: 45ch;
-  text-align: justify;
-  margin-left: 7px;
-  margin-right: 7px;
-}
-
-.project-item img {
-  max-width: 100%;
-  margin-left: 20px;
-}
-
-@media (max-width: 1232px) {
-  .project-container {
-    flex-direction: column;
-  }
-  .project-item  img {
-    margin-left: 0;
-  }
+      justify-content: space-between;
+      align-items: baseline;
 }
 
 /* Contato */
@@ -339,31 +325,28 @@ textarea::placeholder {
   color: #c7c7c7;
 }
 
-/* video provisorio */
-.custom-video-container {
-  position: relative;
-  max-width: 700px;
-  overflow: hidden;
+
+/* flexbox */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1005px;
+  margin: 0 auto;
 }
 
-.custom-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  padding-left: 5px;
-  padding-right: 5px;
+.project {
+  width: calc(50% - 20px);
+  margin: 10px;
+  background-color: #f0f0f0;
+  border-radius: 7px;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
-.play-pause-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: transparent;
-  border: none;
-  width: 90px;
-  height: 90px;
-  background-image: url('https://cdn-icons-png.flaticon.com/512/0/375.png'); 
-  background-size: cover;
-  cursor: pointer;
+@media screen and (max-width: 600px) {
+  .project {
+    width: 100%;
+  }
 }
