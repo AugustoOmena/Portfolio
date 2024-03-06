@@ -241,6 +241,15 @@ heading {
       align-items: baseline;
 }
 
+.lenguages {
+  background-color: #d72e66;
+  border-radius: 7px;
+  padding: 2px;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+}
+
 /* Contato */
 
 .contatop {
