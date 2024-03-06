@@ -1,22 +1,12 @@
 /* Movimenta o Texto */
 document.addEventListener('DOMContentLoaded', () => {
     new TypeIt(".animated", {
-        speed: 200,
+        speed: 90,
         loop: true
-    }).type('Software Developer', {delay: 3000})
-      .move(-18, { delay: 100})
-      .type('Java ', {delay: 3000})
-      .move(-1)
-      .delete(1)
-      .type('ascript', {delay: 2700})
-      .move(0)
-      .delete(11)
-      .type('CSS', {delay: 2700})
-      .delete(4)
-      .type('C#', {delay: 2700})
-      .move(20)
-      .delete(21)
-      .type('Take a look at my projects', {delay: 2700})
+    }).type('Software Developer', {delay: 2000})
+      .delete(18, { delay: 70})
+      .type('Systems Analysis and Development student', {delay: 2000})
+      .delete(40, { delay: 70})
     .go();  
 
 })
@@ -26,9 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const checkbox = document.getElementById('chk');
   const translations = {
     'pt': {
-      'Titulo': 'Desenvolvedor de Software Fullstack web e mobile',
       'h2': 'Olá! Eu sou o Augusto',
-      'p': 'Sou um Desenvolvedor Full Stack com experiência em programação para web, desktop e mobile. Participei de quatro edições do Grand Prix de Inovação no Senai, em uma quinta edição contribui. Essas experiências me permitiram desenvolver projetos desafiadores em equipe, fortalecendo não apenas minhas habilidades técnicas, mas também minha capacidade de colaborar em ambientes dinâmicos de desenvolvimento de software. Estou comprometido em buscar conhecimentos práticos contínuos, sempre procurando oportunidades para aplicar e aprimorar minhas habilidades técnicas. Estou preparado para enfrentar desafios, aprender constantemente e contribuir de maneira significativa para projetos que exijam expertise em programação Full Stack.',
+      'p': 'Sou apaixonado por progranação Back-end, atualmente faço estágio de ADS. Sou um estudante focado e comprometido, com conhecimento Full Stack, conheço um pouco de muitas ferramentas, e tenho minhas favoritas qual eu me aprofundo mais. Participei de quatro edições do Grand Prix de Inovação no Senai, em uma quinta edição contribui. Essas experiências junto com meu estágio me permitiram desenvolver projetos desafiadores em equipe, fortalecendo não apenas minhas habilidades técnicas, mas também minha capacidade de colaborar em ambientes dinâmicos de desenvolvimento de software. Estou preparado para enfrentar desafios, aprender constantemente e contribuir em novas oportunidades.',
       'tituloHabilidades': 'Minhas Habilidades',
       'tituloCursos': 'Cursos de Aperfeiçoamento',
       'HabilidadesBackend': 'Backend - Aplicações Multi-Plataforma',
@@ -59,10 +48,9 @@ document.addEventListener('DOMContentLoaded', function () {
       'ProjDescOm': 'Desenvolvi um aplicativo em C# para Windows, que antecipa possíveis falhas em motores por meio de um Arduino equipado com sensores. O sistema notifica os status relevantes por meio do WhatsApp no ambiente do SENAI.',
     },
     'en': {
-      'Titulo': 'Fullstack web and mobile software developer',
       'projects-section': 'Recent Projects',
       'h2': 'Hello! I am Augusto',
-      'p': 'I am a Full Stack Developer with experience in web, desktop, and mobile programming. I have participated in four editions of the Innovation Grand Prix at Senai, and in a fifth edition, I made a contribution. These experiences have allowed me to work on challenging projects as part of a team, enhancing not only my technical skills but also my ability to collaborate in dynamic software development environments. I am committed to continuously seeking practical knowledge, always looking for opportunities to apply and enhance my technical skills. I am prepared to take on challenges, learn constantly, and contribute significantly to projects that demand expertise in Full Stack programming.',
+      'p': 'I´m passionate about Back-end programming, I´m currently doing an ADS internship. I am a focused and committed student, with Full Stack knowledge, I know a little about many tools, and I have my favorites which I delve into more deeply. I participated in four editions of the Innovation Grand Prix at Senai, and in a fifth edition I contributed. These experiences along with my internship allowed me to develop challenging projects as a team, strengthening not only my technical skills, but also my ability to collaborate in dynamic software development environments. I am prepared to face challenges, constantly learn and contribute to new opportunities.',
       'tituloHabilidades': 'My Skills',
       'tituloCursos': 'Improvement courses',
       'HabilidadesBackend': 'Backend - Multi-Platform Applications',
@@ -101,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   function translateContent(language) {
-    const Titulo = document.querySelector('.titulo');
     const h2 = document.querySelector('.content-section h2');
     const p = document.querySelector('.content-section .minibiola');
     const tituloHabilidades = document.querySelector('.containere .habilidades-title');
@@ -145,7 +132,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     if (translations[language]) {
-      Titulo.innerText = translations[language]['Titulo'];
       h2.innerText = translations[language]['h2'];
       p.innerText = translations[language]['p'];
       tituloHabilidades.innerText = translations[language]['tituloHabilidades'];
@@ -270,4 +256,19 @@ function togglePlayPause() {
     container.classList.remove('playing');
     button.style.backgroundImage = 'url("https://cdn-icons-png.flaticon.com/512/0/375.png")'; /* Altere para o ícone de play */
   }
+}
+
+var gif = document.getElementById('meuGif');
+
+// Adiciona um ouvinte de evento de clique ao GIF
+gif.addEventListener('click', toggleAnimation);
+
+function toggleAnimation() {
+    if (gif.style.animationPlayState === 'running') {
+        // Pausa a animação se estiver em execução
+        gif.style.animationPlayState = 'paused';
+    } else {
+        // Inicia a animação se estiver pausada
+        gif.style.animationPlayState = 'running';
+    }
 }
