@@ -26,10 +26,13 @@ document.addEventListener('DOMContentLoaded', function () {
       'HabilidadesBackendRuby': 'Estou aprendendo sua sintaxe e resolvendo desafios, gosto da linguagem por ser muito eficiente, limpa e expressiva. Tenho a vontade de trabalhar com seu framework Rails, qual sou um pouco familiarizado.',
       'HabilidadesBackendTDD': ' Aprendi a utilizar o básico sobre testes unitários, utilizando Jest para JavaScript, RSpec para Ruby, e xUnit Para C#. Estou aberto a aprender novas ferramentas de testes unitários. ',
       'HabilidadesBackendC': 'Aprendi a programar e usar Arduino no Senai, tenho domínio sobre a construção de algoritmos com C++ para Arduino.',
+      'HabilidadePy' : 'Sei fazer automações de tarefas com python.',
       'tituloHabilidades2': 'Frontend - Aplicações Web',
       'HabilidadesFront': 'Tenho domínio de HTML, CSS, e Javascript, Além disso, já utilizei outras tecnologias ligadas ao front-end como React, Typescript e Angular.',
       'HabilidadesData': 'Concluí a coleção Azure Developer da Microsoft para conhecer todos os recursos para desenvolvedores da Azure. Também utilizo recursos de hospedagem e armazenamento de banco de dados e blobs.',
       'HabilidadesSql': 'É o banco de dados que costumo utilizar, mas posso me adaptar e aprender outros.',
+      'HabilidadesIngles' : 'Posso ler, escrever e ouvir bem em ingles, e conversar o básico.',
+      'HabilidadesGerais' : 'Habilidades Complementares',
       'CasosEstudosTitle': 'Casos de Estudos',
       'tituloContatos': 'Entre em Contato',
       'subtituloContatos': 'Sinta se livre para entrar em contato!',
@@ -55,8 +58,10 @@ document.addEventListener('DOMContentLoaded', function () {
       'HabilidadesBackendJava': 'It was the first language I studied, I programmed a lot in Java with console applications, and later in college with web projects.',
       'HabilidadesBackendRuby': 'I´m learning its syntax and solving challenges, I like the language because it´s very efficient, clean and expressive. I want to work with your Rails framework, which I am somewhat familiar with.',
       'HabilidadesBackendTDD': 'I learned to use the basics of unit testing, using Jest for JavaScript, RSpec for Ruby, and xUnit for C#. I´m open to learning new unit testing tools.',
-
+      'HabilidadesIngles' : 'I can read, write and listen well in English, and speak the basics.',
+      'HabilidadesGerais' : 'Complementary Skills',
       'HabilidadesBackendC': 'I learned to program and use Arduino at Senai, I have mastered building algorithms with C++ for Arduino.',
+      'HabilidadePy' : 'I know how to automate tasks with Python.',
       'tituloHabilidades2': 'Frontend - Web Applications',
       'HabilidadesFront': 'I am proficient in HTML, CSS, and Javascript. In addition, I have used other technologies linked to the front-end such as React, Typescript and Angular.',
       'HabilidadesData': 'Complete Microsoft´s Azure Developer Collection to learn about all of the resources for Azure developers. I also use hosting and database and blob storage resources.',
@@ -92,9 +97,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const HabilidadesBackendJava = document.querySelector('.containere .habilidadeJava');
     const HabilidadesBackendRuby = document.querySelector('.containere .habilidadeRuby');
     const HabilidadesBackendTDD = document.querySelector('.containere .habilidadeTDD');
-
+    const HabilidadesGerais = document.querySelector('.habilidadesGerais');
+    const HabilidadesIngles = document.querySelector('.habilidadesIngles');
 
     const HabilidadesBackendC = document.querySelector('.containere .habilidadeCplus');
+    const HabilidadePy = document.querySelector('.habilidadePy');
     const tituloHabilidades2 = document.querySelector('.containere .habilidades2-title');
     const HabilidadesFront = document.querySelector('.containere .habilidadeFrontend');
     const HabilidadesData = document.querySelector('.containere .habilidadesData');
@@ -132,8 +139,11 @@ document.addEventListener('DOMContentLoaded', function () {
       HabilidadesBackendJava.innerText = translations[language]['HabilidadesBackendJava'];
       HabilidadesBackendRuby.innerText = translations[language]['HabilidadesBackendRuby'];
       HabilidadesBackendTDD.innerText = translations[language]['HabilidadesBackendTDD'];
+      HabilidadesGerais.innerText = translations[language]['HabilidadesGerais']
+      HabilidadesIngles.innerText = translations[language]['HabilidadesIngles']
 
       HabilidadesBackendC.innerText = translations[language]['HabilidadesBackendC'];
+      HabilidadePy.innerText = translations[language]['HabilidadePy'];
       tituloHabilidades2.innerText = translations[language]['tituloHabilidades2'];
       HabilidadesFront.innerText = translations[language]['HabilidadesFront'];
       HabilidadesData.innerText = translations[language]['HabilidadesData'];
