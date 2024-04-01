@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const translations = {
     'pt': {
       'h2': 'Olá! Eu sou o Augusto',
-      'p': 'Sou apaixonado por progranação Back-end, atualmente faço estágio de ADS. Sou um estudante focado e comprometido, com conhecimento Full Stack, conheço um pouco de muitas ferramentas, e tenho minhas favoritas qual eu me aprofundo mais. Participei de quatro edições do Grand Prix de Inovação no Senai, em uma quinta edição contribui. Essas experiências junto com meu estágio me permitiram desenvolver projetos desafiadores em equipe, fortalecendo não apenas minhas habilidades técnicas, mas também minha capacidade de colaborar em ambientes dinâmicos de desenvolvimento de software. Estou preparado para enfrentar desafios, aprender constantemente e contribuir em novas oportunidades.',
+      'p': 'Desenvolvedor Full-Stack com habilidades em C# e experiência com banco de dados SQL e NoSQL. Familiarizado com metodologias ágeis e organização de projetos. Conhecimento em algoritmos e estrutura de dados. Proativo e em busca de oportunidades para ampliar minha experiência como desenvolvedor. ',
       'tituloHabilidades': 'Minhas Habilidades',
       'HabilidadesBackend': 'Backend - Aplicações Multi-Plataforma',
       'HabilidadesBackendCsharp': ' É a linguagem que mais gosto e domino. Já desenvolvi alguns aplicativos nativos para Windows, APIs, e também aplicativos web.',
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     'en': {
       'projects-section': 'Recent Projects',
       'h2': 'Hello! I am Augusto',
-      'p': 'I´m passionate about Back-end programming, I´m currently doing an ADS internship. I am a focused and committed student, with Full Stack knowledge, I know a little about many tools, and I have my favorites which I delve into more deeply. I participated in four editions of the Innovation Grand Prix at Senai, and in a fifth edition I contributed. These experiences along with my internship allowed me to develop challenging projects as a team, strengthening not only my technical skills, but also my ability to collaborate in dynamic software development environments. I am prepared to face challenges, constantly learn and contribute to new opportunities.',
+      'p': 'Full-Stack developer with C# skills and experience with SQL and NoSQL databases. Familiar with agile methodologies and project organization. Knowledge of algorithms and data structure. Proactive and looking for opportunities to expand my experience as a developer.',
       'tituloHabilidades': 'My Skills',
       'HabilidadesBackend': 'Backend - Multi-Platform Applications',
       'HabilidadesBackendCsharp': ' It`s the language I like and master the most. I have already developed some native applications for Windows, APIs, and also web applications.',
